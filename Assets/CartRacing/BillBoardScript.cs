@@ -15,7 +15,8 @@ public class BillBoardScript : MonoBehaviour
         //sets the target to the main camera
         target = Camera.main.transform;
     }
-    private void Update()
+
+    private void LateUpdate()
     {
         //if we can look vertically look directly at the target otherwise
         //look at the target's x and z position but this object's y position
