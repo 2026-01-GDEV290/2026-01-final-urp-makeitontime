@@ -34,5 +34,13 @@ public class CarSpriteAnimScript : MonoBehaviour
             anim.SetBool("LeftTurn", false);
             anim.SetBool("RightTurn", false);
         }
+        if (Input.GetKey(KeyCode.Period) && !Input.GetKey(KeyCode.Comma))
+        {
+            anim.SetBool("Reversing", true);
+        }
+        else
+        {
+            anim.SetBool("Reversing", false);
+        }
     }
 }
