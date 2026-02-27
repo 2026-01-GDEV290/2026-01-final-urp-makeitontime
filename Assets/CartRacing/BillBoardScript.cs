@@ -2,17 +2,23 @@ using UnityEngine;
 
 public class BillBoardScript : MonoBehaviour
 {
+    //the thing that the billboard wants to look at
     private Transform target;
 
+    //some things we don't want facing the camera vertically like the cars
+    //but somethings we may want to have facing the cam like collectables
     [SerializeField]
     public bool canLookVertically;
 
     private void Awake()
     {
+        //sets the target to the main camera
         target = Camera.main.transform;
     }
     private void Update()
     {
+        //if we can look vertically look directly at the target otherwise
+        //look at the target's x and z position but this object's y position
         if (canLookVertically)
         {
             transform.LookAt(target);

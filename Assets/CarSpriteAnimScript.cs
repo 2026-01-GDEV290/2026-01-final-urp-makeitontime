@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class CarSpriteAnimScript : MonoBehaviour
 {
+    //get car animator
     [SerializeField]
     Animator anim;
-
+    // let our horizontal axis be accessible in the whole script
     float horizontal;
     void Start()
     {
+        //set our animator to our car animator
         anim = GetComponent<Animator>();
     }
 
@@ -16,6 +18,7 @@ public class CarSpriteAnimScript : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
+        //logic!
         if (horizontal >= 0.01f)
         {
             anim.SetBool("RightTurn", false);
