@@ -177,8 +177,8 @@ public class CartScript : MonoBehaviour
             */
             Vector3 projForward = Vector3.ProjectOnPlane(currentForward, upDir).normalized;
 
-            /* in the case that our rigidbody becomes stationary on a platform create a force 
-             * that moves the car forward on the ramp by a magnitude of 1
+            /* in the case that our rigidbody becomes stationary on a platform create a vector
+             * perpindicular ro right and upDir to serve as forward direction
              */
             if (projForward.sqrMagnitude < 0.001f)
             {
