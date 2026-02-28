@@ -8,6 +8,7 @@ public class ScreenScriptableOBJ : ScriptableObject
     public Color nameColor;
     public Sprite charOne;
     public Sprite charTwo;
+    public AudioClip voiceOver;
     public string charSpeakingName;
     public string text;
 }

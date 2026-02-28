@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Screen 1
   m_EditorClassIdentifier: 
   leftSpeaking: 0
-  textColor: {r: 0, g: 0.49434614, b: 1, a: 0}
-  nameColor: {r: 0, g: 0.2107153, b: 1, a: 0}
+  textColor: {r: 0, g: 0.49434614, b: 1, a: 1}
+  nameColor: {r: 0, g: 0.2107153, b: 1, a: 1}
   charOne: {fileID: 21300000, guid: fb44f7fca28c9264ca6122a45e77eedf, type: 3}
   charTwo: {fileID: 21300000, guid: 4ff00e33f8a1020428e9b13215f83dce, type: 3}
+  voiceOver: {fileID: 8300000, guid: fb559834857c61c42a531203d3f53394, type: 3}
   charSpeakingName: Konata
   text: Hey whats up video games or whatever

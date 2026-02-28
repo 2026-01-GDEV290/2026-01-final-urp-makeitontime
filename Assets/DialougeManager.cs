@@ -21,6 +21,8 @@ public class DialougeManager : MonoBehaviour
 
     [SerializeField]
     DialougeScriptableObject scene;
+    [SerializeField]
+    AudioSource source;
     int sNum;
 
     float h;
@@ -29,7 +31,6 @@ public class DialougeManager : MonoBehaviour
     private void Start()
     {
         sNum = -1;
-        updateDialouge();
     }
     // Update is called once per frame
     void Update()
@@ -93,5 +94,6 @@ public class DialougeManager : MonoBehaviour
             leftChar.rectTransform.localPosition = new Vector3(-200, 45, 0);
             leftChar.rectTransform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
         }
+        source.PlayOneShot(screen.voiceOver);
     }
 }
