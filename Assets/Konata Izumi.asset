@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5b9c8a7b122f714e9b84e75f18c77d6, type: 3}
+  m_Name: Konata Izumi
+  m_EditorClassIdentifier: 
+  screen:
+  - {fileID: 11400000, guid: cbca5b812628b0c49b4442057f5eeb06, type: 2}
+  - {fileID: 11400000, guid: 83010ee4c878a23488a7e0409c2b49a8, type: 2}
+  - {fileID: 11400000, guid: 0efcb2e60fcc2a348ae611628accbc6a, type: 2}
+  - {fileID: 11400000, guid: edee45362140d3941952f766f05474d7, type: 2}
+  - {fileID: 11400000, guid: 6dc6436ea484aa7468a3119f37663ba6, type: 2}
+  - {fileID: 11400000, guid: 3d2725abb051f794e923dab704f32423, type: 2}
+  - {fileID: 11400000, guid: 81a5a480cf2b60a4f9d16b432d224708, type: 2}
