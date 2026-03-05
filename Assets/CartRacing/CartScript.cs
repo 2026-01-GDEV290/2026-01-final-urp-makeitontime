@@ -93,6 +93,8 @@ public class CartScript : MonoBehaviour
         //Caps the speed of the car at maxMoveSpeed
         SpeedControl();
 
+        //Draw a ray towards the forward position
+        Debug.DrawRay(transform.position,rb.linearVelocity,Color.red);
 
         //if the car is touching the ground set linearDamping to our groundDrag value
         //otherwise set the linearDamping to 0

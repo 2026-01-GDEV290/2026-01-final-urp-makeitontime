@@ -3,18 +3,13 @@ using UnityEngine;
 public class BillBoardScript : MonoBehaviour
 {
     //the thing that the billboard wants to look at
+    [SerializeField]
     private Transform target;
 
     //some things we don't want facing the camera vertically like the cars
     //but somethings we may want to have facing the cam like collectables
     [SerializeField]
     public bool canLookVertically;
-
-    private void Awake()
-    {
-        //sets the target to the main camera
-        target = Camera.main.transform;
-    }
 
     private void LateUpdate()
     {
