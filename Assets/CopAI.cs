@@ -1,23 +1,36 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class CopAI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] bool _useTestBeat;
+    [SerializeField] float _pulseSize = 1.15f;
+    [SerializeField] float _returnSpeed = 5f;
+    private Vector3 _startSize;
 
-    NavMeshAgent agent;
-    void Awake()
+    private void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        _startSize = transform.localScale;
+        if (_useTestBeat)
+        {
+            StartCoroutine(TestBeat());
+        }
     }
-    void Start()
+    private void Update()
     {
-        
+        transform.localScale = Vector3.Lerp(transform.localScale,_startSize,Time.deltaTime * _returnSpeed);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Pulse()
     {
-        agent.destination = FindFirstObjectByType<CartScript>().transform.position;
+        transform.localScale = _startSize * _pulseSize;
+    }
+    IEnumerator TestBeat()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1f);
+            Pulse();
+        }
     }
 }
