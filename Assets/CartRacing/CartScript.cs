@@ -81,6 +81,14 @@ public class CartScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Time.timeScale == 0)
+        {
+            debugText.gameObject.SetActive(false);
+        }
+        else
+        {
+            debugText.gameObject.SetActive(true);
+        }
         //Update the MPH text
         debugText.text = "MPH: " + Mathf.Round(rb.linearVelocity.magnitude);
         //Shoots a ray downwards half of the car's size with an added .2 for error
