@@ -6,9 +6,11 @@ public class CopAI : MonoBehaviour
 {
     Transform playerTransform;
     NavMeshAgent agent;
+    bool remapPath;
 
     private void Awake()
     {
+        remapPath = true;
         agent = GetComponent<NavMeshAgent>();
     }
     private void Start()
@@ -17,6 +19,20 @@ public class CopAI : MonoBehaviour
     }
     private void Update()
     {
-        agent.SetDestination(playerTransform.position);
+        float distance = Vector3.Distance(transform.position,playerTransform.position);
+        if (distance < 50)
+        {
+            agent.SetDestination(playerTransform.position);
+        }else if(remapPath)
+        {
+            remapPath = false;
+            agent.SetDestination(playerTransform.position);
+            StartCoroutine(repath());
+        }
+    }
+    IEnumerator repath()
+    {
+        yield return new WaitForSeconds(5);
+        remapPath = true;
     }
 }

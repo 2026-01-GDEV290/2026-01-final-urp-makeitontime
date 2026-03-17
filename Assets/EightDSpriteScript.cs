@@ -21,6 +21,7 @@ public class EightDSpriteScript : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        animator = GetComponentInChildren<Animator>();
         player = Camera.main.transform;
     }
 
