@@ -4,33 +4,19 @@ using UnityEngine.AI;
 
 public class CopAI : MonoBehaviour
 {
-    [SerializeField] bool _useTestBeat;
-    [SerializeField] float _pulseSize = 1.15f;
-    [SerializeField] float _returnSpeed = 5f;
-    private Vector3 _startSize;
+    Transform playerTransform;
+    NavMeshAgent agent;
 
+    private void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+    }
     private void Start()
     {
-        _startSize = transform.localScale;
-        if (_useTestBeat)
-        {
-            StartCoroutine(TestBeat());
-        }
+        playerTransform = FindFirstObjectByType<CartScript>().gameObject.transform;
     }
     private void Update()
     {
-        transform.localScale = Vector3.Lerp(transform.localScale,_startSize,Time.deltaTime * _returnSpeed);
-    }
-    public void Pulse()
-    {
-        transform.localScale = _startSize * _pulseSize;
-    }
-    IEnumerator TestBeat()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(1f);
-            Pulse();
-        }
+        agent.SetDestination(playerTransform.position);
     }
 }

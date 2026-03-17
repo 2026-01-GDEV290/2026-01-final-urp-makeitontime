@@ -7,6 +7,10 @@ public class BeatManager : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private Intervals[] _intervals;
 
+    private void Awake()
+    {
+        Time.timeScale = 1;
+    }
     private void Update()
     {
         foreach (Intervals interval in _intervals)
