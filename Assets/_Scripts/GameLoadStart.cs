@@ -14,7 +14,7 @@ public class GameLoadStart : MonoBehaviour
     }
     IEnumerator gameStart()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
             loadingScreenScript.LoadLevel(1); 
     }
 }
