@@ -1911,7 +1911,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: f93808f3c14fad14bb6fa99f38341937, type: 3}
+  m_Resource: {fileID: 8300000, guid: dee46e359ccaee543aebb40f9164f5d8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2009,7 +2009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ec9143dc429ff42a915a3d916c899e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 105
+  bpm: 150
   audioSource: {fileID: 1703528126}
   _intervals:
   - steps: 1
