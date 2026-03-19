@@ -81,13 +81,9 @@ public class CartScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.timeScale == 0)
+        if (rb.linearVelocity.y > 0.1f && grounded)
         {
-            debugText.gameObject.SetActive(false);
-        }
-        else
-        {
-            debugText.gameObject.SetActive(true);
+            Debug.Log("Jump at : " + rb.position.x + "x " + rb.position.y + "y " + rb.position.z + "z");
         }
         //Update the MPH text
         debugText.text = "MPH: " + Mathf.Round(rb.linearVelocity.magnitude);
@@ -101,8 +97,6 @@ public class CartScript : MonoBehaviour
         //Caps the speed of the car at maxMoveSpeed
         SpeedControl();
 
-        //Draw a ray towards the forward position
-        Debug.DrawRay(transform.position,rb.linearVelocity,Color.red);
 
         //if the car is touching the ground set linearDamping to our groundDrag value
         //otherwise set the linearDamping to 0
