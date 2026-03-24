@@ -52,7 +52,11 @@ public class CartScript : MonoBehaviour
 
     //What is ground?
     [SerializeField]
-    LayerMask GroundLayer;
+    LayerMask GroundLayers;
+    [SerializeField]
+    LayerMask Road;
+    [SerializeField]
+    LayerMask Ground;
 
     //the three "wheels" of the car
     [SerializeField]
@@ -78,6 +82,9 @@ public class CartScript : MonoBehaviour
     bool isBreaking;
     bool isDrifting;
 
+    //Physics Shenanigans
+    bool canMoveAlongY;
+
     // Update is called once per frame
     void Update()
     {
@@ -89,11 +96,11 @@ public class CartScript : MonoBehaviour
         debugText.text = "MPH: " + Mathf.Round(rb.linearVelocity.magnitude);
         //Shoots a ray downwards half of the car's size with an added .2 for error
         //set grounded to true if the ray collides with an object with they layer tag
-        grounded = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, GroundLayer);
+        grounded = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, GroundLayers);
 
         //Controls all the input in one spot
         MyInput();
-        
+
         //Caps the speed of the car at maxMoveSpeed
         SpeedControl();
 
@@ -108,6 +115,10 @@ public class CartScript : MonoBehaviour
         {
             rb.linearDamping = 0;
         }
+
+        checkIfNeedToMoveY();
+
+        setSpeed();
     }
     private void FixedUpdate()
     {
@@ -287,6 +298,34 @@ public class CartScript : MonoBehaviour
 
             //set linearVel = to our new flatvel x and z while retaining it's y value
             rb.linearVelocity = new Vector3(limVel.x, rb.linearVelocity.y, limVel.z);
+        }
+    }
+    void checkIfNeedToMoveY()
+    {
+        if (Vector3.Distance(Vector3.up, transform.up) > 0.15f || !grounded)
+        {
+            Debug.Log("The car needs to be able to move along Y");
+            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        }
+        else
+        {
+            Debug.Log("The car needs to be locked on Y");
+            rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ; ;
+        }
+    }
+    void setSpeed()
+    {
+        bool onRoad = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, Road);
+        bool onGround = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, Ground);
+
+        if (onRoad)
+        {
+            Debug.Log("onRoad");
+            maxMoveSpeed = 80;
+        }else if(onGround)
+        {
+            Debug.Log("onGround");
+            maxMoveSpeed = 60;
         }
     }
 }
