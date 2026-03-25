@@ -379,6 +379,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5037559219217485826, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
+      propertyPath: field of view
+      value: 60.000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037559219217485826, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
+      propertyPath: m_FocalLength
+      value: 20.78461
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037559219217485826, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
       propertyPath: m_BackGroundColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -396,6 +406,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037559219217485826, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5267885883976090125, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
@@ -436,6 +451,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 168270908}
+    - targetCorrespondingSourceObject: {fileID: 3267860683839656502, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1691479348}
   m_SourcePrefab: {fileID: 100100000, guid: f570413939e06f7499bc3bdaed193e41, type: 3}
 --- !u!95 &37301139 stripped
 Animator:
@@ -17351,6 +17370,24 @@ Transform:
   - {fileID: 853273582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!1 &1691479343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3267860683839656502, guid: f570413939e06f7499bc3bdaed193e41,
+    type: 3}
+  m_PrefabInstance: {fileID: 37301138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1691479348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691479343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d03bef94627563543ae416acb4a81ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &1691805261
 MeshCollider:
   m_ObjectHideFlags: 0
