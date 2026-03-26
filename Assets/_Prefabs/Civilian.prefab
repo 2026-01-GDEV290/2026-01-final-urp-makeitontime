@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8055563714844619851}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 8730807975452698459}
   m_Layer: 0
   m_Name: Civilian
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

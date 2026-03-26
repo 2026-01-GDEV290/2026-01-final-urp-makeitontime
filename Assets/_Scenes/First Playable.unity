@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 35952890}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,6 +604,7 @@ GameObject:
   - component: {fileID: 43862144}
   - component: {fileID: 43862143}
   - component: {fileID: 43862142}
+  - component: {fileID: 43862145}
   m_Layer: 0
   m_Name: Civilian (9)
   m_TagString: civ
@@ -666,6 +667,33 @@ Transform:
   - {fileID: 313037566}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &43862145
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43862141}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &67465575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1205,6 +1233,7 @@ GameObject:
   - component: {fileID: 164644744}
   - component: {fileID: 164644743}
   - component: {fileID: 164644742}
+  - component: {fileID: 164644745}
   m_Layer: 0
   m_Name: Civilian (6)
   m_TagString: civ
@@ -1266,6 +1295,33 @@ Transform:
   - {fileID: 1653192248}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &164644745
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164644741}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &167035620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,7 +1815,7 @@ GameObject:
   - component: {fileID: 201651595}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2604,7 +2660,7 @@ GameObject:
   - component: {fileID: 313037562}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3999,7 +4055,7 @@ GameObject:
   - component: {fileID: 432539574}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7740,6 +7796,7 @@ GameObject:
   - component: {fileID: 805921745}
   - component: {fileID: 805921744}
   - component: {fileID: 805921743}
+  - component: {fileID: 805921746}
   m_Layer: 0
   m_Name: Civilian (5)
   m_TagString: civ
@@ -7801,6 +7858,33 @@ Transform:
   - {fileID: 1701285552}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &805921746
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805921742}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &807900958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8031,7 +8115,7 @@ GameObject:
   - component: {fileID: 853273578}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8784,6 +8868,7 @@ GameObject:
   - component: {fileID: 978960695}
   - component: {fileID: 978960694}
   - component: {fileID: 978960693}
+  - component: {fileID: 978960696}
   m_Layer: 0
   m_Name: Civilian (1)
   m_TagString: civ
@@ -8845,6 +8930,33 @@ Transform:
   - {fileID: 1572765916}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &978960696
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978960692}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &981153535
 GameObject:
   m_ObjectHideFlags: 0
@@ -8856,6 +8968,7 @@ GameObject:
   - component: {fileID: 981153538}
   - component: {fileID: 981153537}
   - component: {fileID: 981153536}
+  - component: {fileID: 981153539}
   m_Layer: 0
   m_Name: Civilian (3)
   m_TagString: civ
@@ -8917,6 +9030,33 @@ Transform:
   - {fileID: 1672533482}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &981153539
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981153535}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &992198059
 GameObject:
   m_ObjectHideFlags: 0
@@ -8928,6 +9068,7 @@ GameObject:
   - component: {fileID: 992198062}
   - component: {fileID: 992198061}
   - component: {fileID: 992198060}
+  - component: {fileID: 992198063}
   m_Layer: 0
   m_Name: Civilian (2)
   m_TagString: civ
@@ -8989,6 +9130,33 @@ Transform:
   - {fileID: 1995572936}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &992198063
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992198059}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &997354787
 GameObject:
   m_ObjectHideFlags: 0
@@ -9697,7 +9865,7 @@ GameObject:
   - component: {fileID: 1100425746}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9933,6 +10101,7 @@ GameObject:
   - component: {fileID: 1116781307}
   - component: {fileID: 1116781306}
   - component: {fileID: 1116781305}
+  - component: {fileID: 1116781308}
   m_Layer: 0
   m_Name: Civilian (10)
   m_TagString: civ
@@ -9994,6 +10163,33 @@ Transform:
   - {fileID: 432539578}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &1116781308
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116781304}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!64 &1121195766
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10027,6 +10223,7 @@ GameObject:
   - component: {fileID: 1124050420}
   - component: {fileID: 1124050419}
   - component: {fileID: 1124050418}
+  - component: {fileID: 1124050421}
   m_Layer: 0
   m_Name: Civilian (13)
   m_TagString: civ
@@ -10088,6 +10285,33 @@ Transform:
   - {fileID: 35952894}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &1124050421
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124050417}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!64 &1126360899
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11477,7 +11701,7 @@ GameObject:
   - component: {fileID: 1286792762}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13306,7 +13530,7 @@ GameObject:
   - component: {fileID: 1436067771}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13476,6 +13700,7 @@ GameObject:
   - component: {fileID: 1437117746}
   - component: {fileID: 1437117745}
   - component: {fileID: 1437117744}
+  - component: {fileID: 1437117747}
   m_Layer: 0
   m_Name: Civilian (8)
   m_TagString: civ
@@ -13537,6 +13762,33 @@ Transform:
   - {fileID: 201651599}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &1437117747
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437117743}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!64 &1437923229
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15592,7 +15844,7 @@ GameObject:
   - component: {fileID: 1572765917}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16429,7 +16681,7 @@ GameObject:
   - component: {fileID: 1653192249}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16852,7 +17104,7 @@ GameObject:
   - component: {fileID: 1672533483}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17309,6 +17561,7 @@ GameObject:
   - component: {fileID: 1689422551}
   - component: {fileID: 1689422550}
   - component: {fileID: 1689422549}
+  - component: {fileID: 1689422552}
   m_Layer: 0
   m_Name: Civilian (7)
   m_TagString: civ
@@ -17370,6 +17623,33 @@ Transform:
   - {fileID: 853273582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &1689422552
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689422548}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1691479343 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3267860683839656502, guid: f570413939e06f7499bc3bdaed193e41,
@@ -17676,7 +17956,7 @@ GameObject:
   - component: {fileID: 1701285553}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18509,6 +18789,7 @@ GameObject:
   - component: {fileID: 1845498348}
   - component: {fileID: 1845498347}
   - component: {fileID: 1845498346}
+  - component: {fileID: 1845498349}
   m_Layer: 0
   m_Name: Civilian (4)
   m_TagString: civ
@@ -18570,6 +18851,33 @@ Transform:
   - {fileID: 1100425745}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &1845498349
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845498345}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!64 &1845981285
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19536,6 +19844,7 @@ GameObject:
   - component: {fileID: 1935479413}
   - component: {fileID: 1935479412}
   - component: {fileID: 1935479411}
+  - component: {fileID: 1935479414}
   m_Layer: 0
   m_Name: Civilian (11)
   m_TagString: civ
@@ -19597,6 +19906,33 @@ Transform:
   - {fileID: 1436067775}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &1935479414
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935479410}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!64 &1938502889
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19878,6 +20214,7 @@ GameObject:
   - component: {fileID: 1968986237}
   - component: {fileID: 1968986236}
   - component: {fileID: 1968986235}
+  - component: {fileID: 1968986238}
   m_Layer: 0
   m_Name: Civilian (12)
   m_TagString: civ
@@ -19939,6 +20276,33 @@ Transform:
   - {fileID: 1286792766}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -85.904, z: 0}
+--- !u!54 &1968986238
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968986234}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!64 &1973804413
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20139,7 +20503,7 @@ GameObject:
   - component: {fileID: 1995572937}
   m_Layer: 0
   m_Name: CivSprite
-  m_TagString: Untagged
+  m_TagString: civ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46820,6 +47184,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1038488795606792127, guid: a6445eeae585e4d41a1434fde90e6d4d,
+        type: 3}
+      propertyPath: m_TagString
+      value: civ
+      objectReference: {fileID: 0}
     - target: {fileID: 3307763491876207924, guid: a6445eeae585e4d41a1434fde90e6d4d,
         type: 3}
       propertyPath: m_Name

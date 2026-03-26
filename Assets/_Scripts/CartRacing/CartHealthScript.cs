@@ -4,11 +4,12 @@ public class CartHealthScript : MonoBehaviour
 {
     [SerializeField]
     int hp = 3;
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.tag.Equals("civ"))
+        if (collision.collider.tag.Equals("civ"))
         {
             hp--;
+            Debug.Log("hp: " + hp);
         }
     }
 }
