@@ -60,23 +60,28 @@ MonoBehaviour:
   driftTurnMult: 1.5
   moveSpeed: 5
   maxMoveSpeed: 80
-  turnSpeed: 50
-  alignmentSpeed: 100
+  turnSpeed: 75
+  alignmentSpeed: 15
   groundDrag: 0.5
   carHeight: 4.5
   GroundLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 72
   Road:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   Ground:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   backLeftCar: {fileID: 4827975730089109727}
   frontLeftCar: {fileID: 5870359352879826143}
   backRightCar: {fileID: 8633938964613253707}
   frontRightCar: {fileID: 5267885883976090125}
+  jumpForce: 0
+  CDOne: 0
+  CDTwo: 0
+  CDThree: 0
+  CDFour: 0
 --- !u!54 &5301197873316919793
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -139,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a196b4952a96eaa48838836c90479ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 3
 --- !u!1 &162029840219090709
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,14 +576,14 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -592,7 +598,7 @@ Camera:
     height: 0.25
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: 0

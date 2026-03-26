@@ -30,6 +30,7 @@ public class CartScript : MonoBehaviour
     // The movement speed of the car as a float
     [SerializeField]
     float moveSpeed;
+    float acceleration;
     // The max movement speed of the car I have to have this otherwise the car could amass
     // far too much speed for the player to handle also smthing about max speed n intertia or physics whatever
     [SerializeField]
@@ -81,10 +82,33 @@ public class CartScript : MonoBehaviour
     bool isAccelerating;
     bool isBreaking;
     bool isDrifting;
+    bool jump;
 
     //Physics Shenanigans
     bool canMoveAlongY;
 
+    [SerializeField]
+    float jumpForce;
+
+    bool canJump;
+
+    [SerializeField]
+    bool CDOne;
+    [SerializeField]
+    bool CDTwo;
+    [SerializeField]
+    bool CDThree;
+    [SerializeField]
+    bool CDFour;
+
+    private void Awake()
+    {
+        acceleration = moveSpeed;
+        if (CDTwo)
+        {
+            alignmentSpeed = 1;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -158,9 +182,11 @@ public class CartScript : MonoBehaviour
         if (!grounded)
         {
             upDir = Vector3.up;
+            canJump = false;
         }
         else
         {
+            canJump = true;
             /* ok so Vector3.Cross produces the cross product of two vectors
              * basically what this means is that it takes the two input vectors and 
              * outputs a 3rd which is perpendicular to the other 2 vectors
@@ -235,11 +261,11 @@ public class CartScript : MonoBehaviour
             //this section down to the if statement sets the values so they change when the car is drifting
             float driftingAlignmentSpeed = alignmentSpeed;
             float driftingTurnSpeed = turnSpeed;
-            if (isDrifting)
-            {
-                driftingTurnSpeed *= driftTurnMult;
-                driftingAlignmentSpeed *= driftAlignMult;
-            }
+            /*  if (isDrifting)
+              {
+                  driftingTurnSpeed *= driftTurnMult;
+                  driftingAlignmentSpeed *= driftAlignMult;
+              }*/
 
             //first thing this code does is get the local velocity of the car's rigid body
             Vector3 localVelocity = transform.InverseTransformDirection(rb.linearVelocity);
@@ -259,6 +285,11 @@ public class CartScript : MonoBehaviour
             Quaternion rotation = Quaternion.Euler(0f, turnAngle, 0f);
             rb.MoveRotation(rb.rotation * rotation);
         }
+        if (jump && canJump && CDThree)
+        {
+            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+            rb.AddForce(Vector3.up * jumpForce);
+        }
     }
     /*I use MyInput for a few reasons
     * 1. It allows me to quickly edit and keys were they needed to be changed
@@ -271,6 +302,7 @@ public class CartScript : MonoBehaviour
         isBreaking = Input.GetKey(KeyCode.Period);
         horizontal = Input.GetAxisRaw("Horizontal");
         isDrifting = Input.GetKey(KeyCode.LeftShift);
+        jump = Input.GetKeyDown(KeyCode.Space);
     }
 
     //Caps speed of rigidbody
@@ -318,14 +350,19 @@ public class CartScript : MonoBehaviour
         bool onRoad = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, Road);
         bool onGround = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, Ground);
 
-        if (onRoad)
+        if (!CDOne)
         {
-            Debug.Log("onRoad");
-            maxMoveSpeed = 80;
-        }else if(onGround)
-        {
-            Debug.Log("onGround");
-            maxMoveSpeed = 60;
+            if (onRoad)
+            {
+                Debug.Log("onRoad");
+                acceleration = moveSpeed;
+                maxMoveSpeed = 80;
+            } else if (onGround)
+            {
+                Debug.Log("onGround");
+                acceleration = moveSpeed / 2;
+                maxMoveSpeed = 30;
+            }
         }
     }
 }
