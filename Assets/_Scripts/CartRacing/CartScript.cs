@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -101,8 +102,12 @@ public class CartScript : MonoBehaviour
     [SerializeField]
     bool CDFour;
 
+    private float jumpTimer;
+    private bool justJumped;
+
     private void Awake()
     {
+        justJumped = false;
         acceleration = moveSpeed;
         if (CDTwo)
         {
@@ -112,16 +117,11 @@ public class CartScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rb.linearVelocity.y > 0.1f && grounded)
-        {
-            Debug.Log("Jump at : " + rb.position.x + "x " + rb.position.y + "y " + rb.position.z + "z");
-        }
         //Update the MPH text
         debugText.text = "MPH: " + Mathf.Round(rb.linearVelocity.magnitude);
         //Shoots a ray downwards half of the car's size with an added .2 for error
         //set grounded to true if the ray collides with an object with they layer tag
-        grounded = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, GroundLayers);
-
+        grounded = CheckGrounded();
         //Controls all the input in one spot
         MyInput();
 
@@ -158,6 +158,10 @@ public class CartScript : MonoBehaviour
             //Method to do more physics bullshit that i hate
             MovePlayer();
         }
+    }
+    bool CheckGrounded()
+    {
+         return Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, GroundLayers);
     }
     void AlignToRamp()
     {
@@ -285,10 +289,12 @@ public class CartScript : MonoBehaviour
             Quaternion rotation = Quaternion.Euler(0f, turnAngle, 0f);
             rb.MoveRotation(rb.rotation * rotation);
         }
-        if (jump && canJump && CDThree)
+        if (jump && canJump && CDThree && !justJumped)
         {
             rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-            rb.AddForce(Vector3.up * jumpForce);
+            rb.AddForce(Vector3.up * jumpForce,ForceMode.VelocityChange);
+            justJumped = true;
+            StartCoroutine(resetJump());
         }
     }
     /*I use MyInput for a few reasons
@@ -296,6 +302,11 @@ public class CartScript : MonoBehaviour
     * 2. It allows me to slap all key pressed into Update without taking up and ungodly amout of room (assume we end up with a lot of control inputs)
     * 3. I can update all values easily in update which is called every from so no key presses are missed.
     */
+    IEnumerator resetJump()
+    {
+        yield return new WaitForSeconds(.2f);
+        justJumped = false;
+    }
     void MyInput()
     {
         isAccelerating = Input.GetKey(KeyCode.Comma);
@@ -334,21 +345,16 @@ public class CartScript : MonoBehaviour
     }
     void checkIfNeedToMoveY()
     {
-        if (Vector3.Distance(Vector3.up, transform.up) > 0.15f || !grounded)
-        {
-            Debug.Log("The car needs to be able to move along Y");
-            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-        }
+        bool shouldFreezeY = grounded && !justJumped && Vector3.Distance(Vector3.up, transform.up) <= 0.15f;
+        if (shouldFreezeY)
+            rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         else
-        {
-            Debug.Log("The car needs to be locked on Y");
-            rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ; ;
-        }
+            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
     }
     void setSpeed()
     {
-        bool onRoad = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, Road);
-        bool onGround = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, Ground);
+        bool onRoad = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f , Road);
+        bool onGround = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f , Ground);
 
         if (!CDOne)
         {
