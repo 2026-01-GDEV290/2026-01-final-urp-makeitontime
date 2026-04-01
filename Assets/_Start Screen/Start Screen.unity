@@ -1370,6 +1370,46 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 626549493}
+    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoadingScreenScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5647977879771759112, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
       propertyPath: m_IsActive
@@ -3934,6 +3974,11 @@ PrefabInstance:
       propertyPath: m_OverrideSorting
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5077368183276889436, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_text
+      value: '{level Name}'
+      objectReference: {fileID: 0}
     - target: {fileID: 5647977879771759112, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
       propertyPath: m_IsActive
@@ -4373,6 +4418,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077368183276889436, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_text
+      value: '{Level Name}'
       objectReference: {fileID: 0}
     - target: {fileID: 5647977879771759112, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
@@ -5943,12 +5993,19 @@ PrefabInstance:
     - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077368183276889436, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_text
+      value: 'First Playable
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 7224137427782088793, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
