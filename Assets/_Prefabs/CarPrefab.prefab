@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1999608691165749187}
   - component: {fileID: 5301197873316919793}
   - component: {fileID: 6920892473445347596}
-  - component: {fileID: 5307477510265072561}
+  - component: {fileID: 5762739901203344754}
   m_Layer: 0
   m_Name: CarOBJ
   m_TagString: Untagged
@@ -132,7 +132,7 @@ CapsuleCollider:
   m_Height: 4
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5307477510265072561
+--- !u!114 &5762739901203344754
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,10 +141,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 137515989939963790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a196b4952a96eaa48838836c90479ca0, type: 3}
+  m_Script: {fileID: 11500000, guid: 3cc3778316585c949afd5a5d65376b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 3
+  script: {fileID: 0}
+  prevVel: {x: 0, y: 0, z: 0}
 --- !u!1 &162029840219090709
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +543,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2852515677178979915}
   - component: {fileID: 5037559219217485826}
-  - component: {fileID: 7074051560856582234}
   - component: {fileID: 3082933418851426567}
   m_Layer: 0
   m_Name: RearViewCam
@@ -616,14 +617,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &7074051560856582234
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3267860683839656502}
-  m_Enabled: 1
 --- !u!114 &3082933418851426567
 MonoBehaviour:
   m_ObjectHideFlags: 0
