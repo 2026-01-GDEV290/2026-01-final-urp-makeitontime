@@ -18,7 +18,7 @@ public class CartScript : MonoBehaviour
 
     //Our car's rigid body;
     [SerializeField]
-    Rigidbody rb;
+    public Rigidbody rb;
 
     /*These are our multipliers for out drifting
     * I have it set so you can change both the "driftAlignMult" and turn speed
@@ -100,7 +100,7 @@ public class CartScript : MonoBehaviour
     [SerializeField]
     bool CDThree;
     [SerializeField]
-    bool CDFour;
+    public bool CDFour;
 
     private float jumpTimer;
     private bool justJumped;
