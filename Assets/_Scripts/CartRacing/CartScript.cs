@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,7 +18,7 @@ public class CartScript : MonoBehaviour
 
     //Our car's rigid body;
     [SerializeField]
-    Rigidbody rb;
+    public Rigidbody rb;
 
     /*These are our multipliers for out drifting
     * I have it set so you can change both the "driftAlignMult" and turn speed
@@ -30,6 +31,7 @@ public class CartScript : MonoBehaviour
     // The movement speed of the car as a float
     [SerializeField]
     float moveSpeed;
+    float acceleration;
     // The max movement speed of the car I have to have this otherwise the car could amass
     // far too much speed for the player to handle also smthing about max speed n intertia or physics whatever
     [SerializeField]
@@ -52,7 +54,11 @@ public class CartScript : MonoBehaviour
 
     //What is ground?
     [SerializeField]
-    LayerMask GroundLayer;
+    LayerMask GroundLayers;
+    [SerializeField]
+    LayerMask Road;
+    [SerializeField]
+    LayerMask Ground;
 
     //the three "wheels" of the car
     [SerializeField]
@@ -77,23 +83,48 @@ public class CartScript : MonoBehaviour
     bool isAccelerating;
     bool isBreaking;
     bool isDrifting;
+    bool jump;
 
+    //Physics Shenanigans
+    bool canMoveAlongY;
+
+    [SerializeField]
+    float jumpForce;
+
+    bool canJump;
+
+    [SerializeField]
+    bool CDOne;
+    [SerializeField]
+    bool CDTwo;
+    [SerializeField]
+    bool CDThree;
+    [SerializeField]
+    public bool CDFour;
+
+    private float jumpTimer;
+    private bool justJumped;
+
+    private void Awake()
+    {
+        justJumped = false;
+        acceleration = moveSpeed;
+        if (CDTwo)
+        {
+            alignmentSpeed = 1;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        if (rb.linearVelocity.y > 0.1f && grounded)
-        {
-            Debug.Log("Jump at : " + rb.position.x + "x " + rb.position.y + "y " + rb.position.z + "z");
-        }
         //Update the MPH text
         debugText.text = "MPH: " + Mathf.Round(rb.linearVelocity.magnitude);
         //Shoots a ray downwards half of the car's size with an added .2 for error
         //set grounded to true if the ray collides with an object with they layer tag
-        grounded = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, GroundLayer);
-
+        grounded = CheckGrounded();
         //Controls all the input in one spot
         MyInput();
-        
+
         //Caps the speed of the car at maxMoveSpeed
         SpeedControl();
 
@@ -108,6 +139,10 @@ public class CartScript : MonoBehaviour
         {
             rb.linearDamping = 0;
         }
+
+        checkIfNeedToMoveY();
+
+        setSpeed();
     }
     private void FixedUpdate()
     {
@@ -123,6 +158,10 @@ public class CartScript : MonoBehaviour
             //Method to do more physics bullshit that i hate
             MovePlayer();
         }
+    }
+    bool CheckGrounded()
+    {
+         return Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, GroundLayers);
     }
     void AlignToRamp()
     {
@@ -147,9 +186,11 @@ public class CartScript : MonoBehaviour
         if (!grounded)
         {
             upDir = Vector3.up;
+            canJump = false;
         }
         else
         {
+            canJump = true;
             /* ok so Vector3.Cross produces the cross product of two vectors
              * basically what this means is that it takes the two input vectors and 
              * outputs a 3rd which is perpendicular to the other 2 vectors
@@ -224,11 +265,11 @@ public class CartScript : MonoBehaviour
             //this section down to the if statement sets the values so they change when the car is drifting
             float driftingAlignmentSpeed = alignmentSpeed;
             float driftingTurnSpeed = turnSpeed;
-            if (isDrifting)
-            {
-                driftingTurnSpeed *= driftTurnMult;
-                driftingAlignmentSpeed *= driftAlignMult;
-            }
+            /*  if (isDrifting)
+              {
+                  driftingTurnSpeed *= driftTurnMult;
+                  driftingAlignmentSpeed *= driftAlignMult;
+              }*/
 
             //first thing this code does is get the local velocity of the car's rigid body
             Vector3 localVelocity = transform.InverseTransformDirection(rb.linearVelocity);
@@ -248,18 +289,31 @@ public class CartScript : MonoBehaviour
             Quaternion rotation = Quaternion.Euler(0f, turnAngle, 0f);
             rb.MoveRotation(rb.rotation * rotation);
         }
+        if (jump && canJump && CDThree && !justJumped)
+        {
+            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+            rb.AddForce(Vector3.up * jumpForce,ForceMode.VelocityChange);
+            justJumped = true;
+            StartCoroutine(resetJump());
+        }
     }
     /*I use MyInput for a few reasons
     * 1. It allows me to quickly edit and keys were they needed to be changed
     * 2. It allows me to slap all key pressed into Update without taking up and ungodly amout of room (assume we end up with a lot of control inputs)
     * 3. I can update all values easily in update which is called every from so no key presses are missed.
     */
+    IEnumerator resetJump()
+    {
+        yield return new WaitForSeconds(.2f);
+        justJumped = false;
+    }
     void MyInput()
     {
         isAccelerating = Input.GetKey(KeyCode.Comma);
         isBreaking = Input.GetKey(KeyCode.Period);
         horizontal = Input.GetAxisRaw("Horizontal");
         isDrifting = Input.GetKey(KeyCode.LeftShift);
+        jump = Input.GetKeyDown(KeyCode.Space);
     }
 
     //Caps speed of rigidbody
@@ -287,6 +341,34 @@ public class CartScript : MonoBehaviour
 
             //set linearVel = to our new flatvel x and z while retaining it's y value
             rb.linearVelocity = new Vector3(limVel.x, rb.linearVelocity.y, limVel.z);
+        }
+    }
+    void checkIfNeedToMoveY()
+    {
+        bool shouldFreezeY = grounded && !justJumped && Vector3.Distance(Vector3.up, transform.up) <= 0.15f;
+        if (shouldFreezeY)
+            rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        else
+            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+    }
+    void setSpeed()
+    {
+        bool onRoad = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f , Road);
+        bool onGround = Physics.Raycast(transform.position, Vector3.down, carHeight * .5f , Ground);
+
+        if (!CDOne)
+        {
+            if (onRoad)
+            {
+                Debug.Log("onRoad");
+                acceleration = moveSpeed;
+                maxMoveSpeed = 80;
+            } else if (onGround)
+            {
+                Debug.Log("onGround");
+                acceleration = moveSpeed / 2;
+                maxMoveSpeed = 30;
+            }
         }
     }
 }

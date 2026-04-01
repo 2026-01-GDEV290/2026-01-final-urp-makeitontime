@@ -77,7 +77,7 @@ MonoBehaviour:
   frontLeftCar: {fileID: 5870359352879826143}
   backRightCar: {fileID: 8633938964613253707}
   frontRightCar: {fileID: 5267885883976090125}
-  jumpForce: 0
+  jumpForce: 25
   CDOne: 0
   CDTwo: 0
   CDThree: 0
