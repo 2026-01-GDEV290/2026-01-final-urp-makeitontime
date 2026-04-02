@@ -345,7 +345,7 @@ public class CartScript : MonoBehaviour
     }
     void checkIfNeedToMoveY()
     {
-        bool shouldFreezeY = grounded && !justJumped && Vector3.Distance(Vector3.up, transform.up) <= 0.15f;
+        bool shouldFreezeY = grounded && !justJumped && Vector3.up == transform.up;
         if (shouldFreezeY)
             rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         else
