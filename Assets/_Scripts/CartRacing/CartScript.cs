@@ -345,6 +345,8 @@ public class CartScript : MonoBehaviour
     }
     void checkIfNeedToMoveY()
     {
+        //consider using vector3.distance for the up comparision, i didnt here because it lets the car go up and down slopes smoothly
+
         bool shouldFreezeY = grounded && !justJumped && Vector3.up == transform.up;
         if (shouldFreezeY)
             rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
