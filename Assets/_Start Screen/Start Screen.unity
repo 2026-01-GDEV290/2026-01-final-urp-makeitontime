@@ -552,10 +552,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1388915483}
   m_HandleRect: {fileID: 1538112962}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.1
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.75
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -914,7 +914,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 348465437}
   m_HandleRect: {fileID: 238359813}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.1
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0.75
@@ -5867,7 +5867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameMixer: {fileID: 24100000, guid: fa4cb957694859e42a108cdfc4e00724, type: 2}
   musicSlider: {fileID: 22603547}
-  SFXSlider: {fileID: 0}
+  SFXSlider: {fileID: 125588945}
 --- !u!4 &1973225331
 Transform:
   m_ObjectHideFlags: 0
