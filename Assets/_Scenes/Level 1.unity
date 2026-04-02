@@ -175752,56 +175752,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarPrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 1144817129921019310, guid: f570413939e06f7499bc3bdaed193e41,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1772410071486546248, guid: f570413939e06f7499bc3bdaed193e41,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1772410071486546248, guid: f570413939e06f7499bc3bdaed193e41,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1772410071486546248, guid: f570413939e06f7499bc3bdaed193e41,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1772410071486546248, guid: f570413939e06f7499bc3bdaed193e41,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 73
-      objectReference: {fileID: 0}
-    - target: {fileID: 1772410071486546248, guid: f570413939e06f7499bc3bdaed193e41,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 71
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999608691165749187, guid: f570413939e06f7499bc3bdaed193e41,
-        type: 3}
-      propertyPath: CDTwo
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999608691165749187, guid: f570413939e06f7499bc3bdaed193e41,
-        type: 3}
-      propertyPath: CDFour
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999608691165749187, guid: f570413939e06f7499bc3bdaed193e41,
-        type: 3}
-      propertyPath: CDThree
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999608691165749187, guid: f570413939e06f7499bc3bdaed193e41,
-        type: 3}
-      propertyPath: jumpForce
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 5037559219217485826, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
       propertyPath: m_BackGroundColor.a
@@ -175821,11 +175771,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.r
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7045537381274719311, guid: f570413939e06f7499bc3bdaed193e41,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.76
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
