@@ -16,32 +16,42 @@ public class AudioManager : MonoBehaviour
         if (PlayerPrefs.HasKey("MusicVol"))
         {
             LoadMusicVolume();
+            SFXSlider.value = PlayerPrefs.GetFloat("MusicVol");
         }
         else
         {
-            LoadMusicVolume();
+            SetMusicVol();
         }
         if (PlayerPrefs.HasKey("SFXVol"))
         {
             LoadSFXVolume();
+            SFXSlider.value = PlayerPrefs.GetFloat("SFXVol");
         }
         else
         {
-            LoadSFXVolume();
+            SetSFXVol();
         }
     }
 
     public void SetMusicVol()
     {
+
         float volume = musicSlider.value;
-        gameMixer.SetFloat("MusicVol", Mathf.Log10(volume) * 20);
+        float percent = volume / 1;
+        volume = Mathf.Clamp((percent * 100) - 80, -80, 10);
+
+        gameMixer.SetFloat("MusicVol", volume);
         PlayerPrefs.SetFloat("MusicVol", volume);
     }
     
     public void SetSFXVol()
     {
         float volume = SFXSlider.value;
-        gameMixer.SetFloat("SFXVol", Mathf.Log10(volume) * 20);
+        float percent = volume / 1;
+        volume = Mathf.Clamp((percent * 100) - 80,-80,10);
+        
+
+        gameMixer.SetFloat("SFXVol", volume);
         PlayerPrefs.SetFloat("SFXVol", volume);
     }
     public void LoadMusicVolume()
