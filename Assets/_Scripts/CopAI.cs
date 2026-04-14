@@ -17,7 +17,8 @@ public class CopAI : MonoBehaviour
     [SerializeField]
     AudioSource childSource;
     public bool destroyed;
-
+    [SerializeField]
+    GameObject[] copGank;
     private void Awake()
     {
         destroyed = false;
@@ -27,16 +28,22 @@ public class CopAI : MonoBehaviour
     private void Start()
     {
         playerTransform = FindFirstObjectByType<CartScript>().gameObject.transform;
-        child = GetComponentInChildren<GameObject>();
+       
         childSource = child.GetComponent<AudioSource>();
+        copGank = GameObject.FindGameObjectsWithTag("CopGank");
     }
     private void Update()
     {
         float distance = Vector3.Distance(transform.position,playerTransform.position);
-        if (distance < 75)
+        if (distance < 100)
         {
             agent.SetDestination(playerTransform.position);
-        }else if(remapPath)
+        }
+        else if (distance > 500 && remapPath)
+        {
+            cutOff();
+        }
+        else if (remapPath)
         {
             remapPath = false;
             agent.SetDestination(playerTransform.position);
@@ -46,6 +53,37 @@ public class CopAI : MonoBehaviour
         {
             destroyed = false;
             gameObject.SetActive(false);
+        }
+    }
+    public void cutOff()
+    {
+        Transform chosenPoint = null;
+        float chosenPointDistance = float.NaN;
+        foreach (GameObject t in copGank)
+        {
+            if (chosenPoint == null)
+            {
+                chosenPoint = t.transform;
+                chosenPointDistance = Vector3.Distance(t.transform.position, playerTransform.position);
+            }
+            else if (Vector3.Distance(t.transform.position, playerTransform.position) < chosenPointDistance)
+            {
+                chosenPoint = t.transform;
+                chosenPointDistance = Vector3.Distance(t.transform.position, playerTransform.position);
+            }
+        }
+        if (chosenPoint != null)
+        {
+            agent.transform.position = chosenPoint.position;
+            remapPath = false;
+            agent.SetDestination(playerTransform.position);
+            StartCoroutine(repath());
+        }
+        else
+        {
+            remapPath = false;
+            agent.SetDestination(playerTransform.position);
+            StartCoroutine(repath());
         }
     }
     public void DestroyThisCar()
