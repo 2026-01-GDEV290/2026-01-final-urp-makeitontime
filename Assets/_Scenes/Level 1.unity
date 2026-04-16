@@ -217522,6 +217522,11 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5538316419597457751, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7045537381274719311, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
       propertyPath: m_LocalPosition.y
