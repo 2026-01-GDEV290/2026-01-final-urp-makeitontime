@@ -11,21 +11,34 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     Slider SFXSlider;
 
+    public GAMEMANAGER gameManager = null;
+    public SaveData data;
+
     private void Start()
     {
-        if (PlayerPrefs.HasKey("MusicVol"))
+        gameManager = FindFirstObjectByType<GAMEMANAGER>();
+        if (gameManager != null)
+        {
+            data = gameManager.getSaveData();
+        }
+        else
+        {
+            Debug.Log("Game Manager == null");
+        }
+
+        gameManager.Load_Game();
+
+        if (data.MusicVolume >= 0f && data.MusicVolume <= .75f)
         {
             LoadMusicVolume();
-            SFXSlider.value = PlayerPrefs.GetFloat("MusicVol");
         }
         else
         {
             SetMusicVol();
         }
-        if (PlayerPrefs.HasKey("SFXVol"))
+        if (data.SFXVolume >= 0f && data.SFXVolume <= .75f)
         {
             LoadSFXVolume();
-            SFXSlider.value = PlayerPrefs.GetFloat("SFXVol");
         }
         else
         {
@@ -35,34 +48,39 @@ public class AudioManager : MonoBehaviour
 
     public void SetMusicVol()
     {
-
         float volume = musicSlider.value;
+
+        data.MusicVolume = volume;
+
         float percent = volume / 1;
         volume = Mathf.Clamp((percent * 100) - 80, -80, 10);
 
         gameMixer.SetFloat("MusicVol", volume);
-        PlayerPrefs.SetFloat("MusicVol", volume);
+
+        gameManager.Save_Game();
     }
     
     public void SetSFXVol()
     {
         float volume = SFXSlider.value;
+        data.SFXVolume = volume;
+
         float percent = volume / 1;
         volume = Mathf.Clamp((percent * 100) - 80,-80,10);
         
 
         gameMixer.SetFloat("SFXVol", volume);
-        PlayerPrefs.SetFloat("SFXVol", volume);
+
+        gameManager.Save_Game();
     }
     public void LoadMusicVolume()
     {
-        musicSlider.value = PlayerPrefs.GetFloat("MusicVol");
-
+        musicSlider.value = data.MusicVolume;
         SetMusicVol();
     }
     public void LoadSFXVolume()
     {
-        SFXSlider.value = PlayerPrefs.GetFloat("SFXVol");
+        SFXSlider.value = data.MusicVolume;
 
         SetSFXVol();
     }

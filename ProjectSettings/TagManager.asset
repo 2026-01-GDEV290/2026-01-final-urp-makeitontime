@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - cop
+  - GAMEMANAGER
   layers:
   - Default
   - TransparentFX
