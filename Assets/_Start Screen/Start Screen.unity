@@ -1365,60 +1365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelPagePrefab (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 600877067124983834, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 626549493}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LoadingScreenScript, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5647977879771759112, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7224137427782088793, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
-      propertyPath: defaultLayer
-      value: 3
+      propertyPath: level
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7458541565693540551, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
@@ -2492,7 +2442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c5b25136ad5194783c2365bc52a6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Instance: {fileID: 0}
 --- !u!4 &633817478
 Transform:
   m_ObjectHideFlags: 0
@@ -4009,30 +3958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelPagePrefab (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 600877067124983834, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 600877067124983834, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OverrideSorting
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077368183276889436, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_text
-      value: '{level Name}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5647977879771759112, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7224137427782088793, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
-      propertyPath: defaultLayer
-      value: 1
+      propertyPath: level
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7458541565693540551, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
@@ -4459,25 +4388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelPagePrefab (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 600877067124983834, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077368183276889436, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_text
-      value: '{Level Name}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5647977879771759112, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7224137427782088793, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
-      propertyPath: defaultLayer
-      value: 2
+      propertyPath: level
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7458541565693540551, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
@@ -6020,67 +5934,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelPagePrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 600877067124983834, guid: 187167ba29a3dcc47affc1d856714135,
+    - target: {fileID: 7224137427782088793, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      propertyPath: level
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 626549493}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LoadingScreenScript, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077368183276889436, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_text
-      value: 'First Playable
-
-'
       objectReference: {fileID: 0}
     - target: {fileID: 7224137427782088793, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
       propertyPath: selected
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7224137427782088793, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: defaultLayer
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7458541565693540551, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}

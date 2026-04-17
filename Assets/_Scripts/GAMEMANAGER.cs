@@ -70,11 +70,11 @@ public class GAMEMANAGER : MonoBehaviour
 [System.Serializable]
 public class SaveData
 {
-    public float Hi_Score_Level_One;
-    public float Hi_Score_Level_Two;
-    public float Hi_Score_Level_Three;
-    public float Hi_Score_Level_Four;
-    public float Hi_Score_Level_Five;
+    public string Hi_Score_Level_One;
+    public string Hi_Score_Level_Two;
+    public string Hi_Score_Level_Three;
+    public string Hi_Score_Level_Four;
+    public string Hi_Score_Level_Five;
 
     public bool Level_One_Locked;
     public bool Level_Two_Locked;
