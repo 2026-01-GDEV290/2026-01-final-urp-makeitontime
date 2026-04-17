@@ -49,7 +49,7 @@ public class LevelPageScript : MonoBehaviour, IPointerEnterHandler
 
     public void play()
     {
-        loadingScreen.LoadLevel(level + 2);
+        loadingScreen.LoadLevel(level + 1);
     }
 
     public void updateGameInfo()

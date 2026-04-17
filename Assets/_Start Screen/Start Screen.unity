@@ -2895,6 +2895,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &863407280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 863407282}
+  - component: {fileID: 863407281}
+  m_Layer: 0
+  m_Name: GAMEMANAGER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &863407281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863407280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c5b25136ad5194783c2365bc52a6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &863407282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863407280}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 45.65764, y: 0, z: 651.4979}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &978059765
 GameObject:
   m_ObjectHideFlags: 0
@@ -5883,6 +5927,26 @@ MonoBehaviour:
   gameMixer: {fileID: 24100000, guid: fa4cb957694859e42a108cdfc4e00724, type: 2}
   musicSlider: {fileID: 22603547}
   SFXSlider: {fileID: 125588945}
+  gameManager: {fileID: 0}
+  data:
+    Hi_Score_Level_One: 
+    Hi_Score_Level_Two: 
+    Hi_Score_Level_Three: 
+    Hi_Score_Level_Four: 
+    Hi_Score_Level_Five: 
+    Level_One_Locked: 0
+    Level_Two_Locked: 0
+    Level_Three_Locked: 0
+    Level_Four_Locked: 0
+    Level_Five_Locked: 0
+    Level_One_B_Side_Locked: 0
+    Level_Two_B_Side_Locked: 0
+    Level_Three_B_Side_Locked: 0
+    Level_Four_B_Side_Locked: 0
+    Level_Five_B_Side_Locked: 0
+    SFXVolume: 0.5
+    MusicVolume: 0.5
+    valueThree: 
 --- !u!4 &1973225331
 Transform:
   m_ObjectHideFlags: 0
@@ -5970,80 +6034,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelPagePrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 452514358027389304, guid: 187167ba29a3dcc47affc1d856714135,
+    - target: {fileID: 7224137427782088793, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
-      propertyPath: m_IsActive
+      propertyPath: level
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 600877067124983834, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 626549493}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LoadingScreenScript, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1014283296567486567, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4911972941269016440, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_text
-      value: 'Rank: U'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5077368183276889436, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_text
-      value: Level 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7115523910812024913, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: m_text
-      value: 'Time: 4:30'
       objectReference: {fileID: 0}
     - target: {fileID: 7224137427782088793, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
       propertyPath: selected
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7224137427782088793, guid: 187167ba29a3dcc47affc1d856714135,
-        type: 3}
-      propertyPath: defaultLayer
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7458541565693540551, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
@@ -6318,3 +6317,4 @@ SceneRoots:
   - {fileID: 707503319}
   - {fileID: 626549492}
   - {fileID: 1973225331}
+  - {fileID: 863407282}
