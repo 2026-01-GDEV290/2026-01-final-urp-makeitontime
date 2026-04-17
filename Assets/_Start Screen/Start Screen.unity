@@ -1365,6 +1365,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelPagePrefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 452514358027389304, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 600877067124983834, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
       propertyPath: m_SortingOrder
@@ -3964,6 +3969,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelPagePrefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 452514358027389304, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 600877067124983834, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
       propertyPath: m_SortingOrder
@@ -4413,6 +4423,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelPagePrefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 452514358027389304, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 600877067124983834, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
@@ -5955,6 +5970,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelPagePrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 452514358027389304, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 600877067124983834, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
       propertyPath: m_SortingOrder
@@ -6000,12 +6020,20 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4911972941269016440, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_text
+      value: 'Rank: U'
+      objectReference: {fileID: 0}
     - target: {fileID: 5077368183276889436, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}
       propertyPath: m_text
-      value: 'First Playable
-
-'
+      value: Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7115523910812024913, guid: 187167ba29a3dcc47affc1d856714135,
+        type: 3}
+      propertyPath: m_text
+      value: 'Time: 4:30'
       objectReference: {fileID: 0}
     - target: {fileID: 7224137427782088793, guid: 187167ba29a3dcc47affc1d856714135,
         type: 3}

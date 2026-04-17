@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5301197873316919793}
   - component: {fileID: 6920892473445347596}
   - component: {fileID: 5762739901203344754}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CarOBJ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 98320183397649216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: camPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 5230192121913441630}
   - component: {fileID: 5313280415803154593}
   - component: {fileID: 8974097393149324362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CarSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -670,7 +670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8633938964613253707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BackRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -850,7 +850,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4827975730089109727}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BackLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1017,7 +1017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5870359352879826143}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FrontLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1048,7 +1048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4208826655013155952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: orientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1079,7 +1079,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5267885883976090125}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FrontRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
