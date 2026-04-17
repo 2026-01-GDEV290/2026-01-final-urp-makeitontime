@@ -1,9 +1,9 @@
 using UnityEngine;
 
 public class MirrorCam : MonoBehaviour
-{
+{/*
     Camera rearView;
-    void Start()
+    private void Start()
     {
         rearView = GetComponent<Camera>();
 
@@ -11,10 +11,16 @@ public class MirrorCam : MonoBehaviour
         mat *= Matrix4x4.Scale(new Vector3(-1, 1, 1));
         rearView.projectionMatrix = mat;
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnPreCull()
     {
-        
+
     }
+    private void OnPreRender()
+    {
+        GL.invertCulling = true;
+    }
+    private void OnPostRender()
+    {
+        GL.invertCulling = false;
+    }*/
 }

@@ -11,48 +11,68 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     Slider SFXSlider;
 
+    public GAMEMANAGER gameManager = null;
+    public SaveData data;
+
     private void Start()
     {
-        if (PlayerPrefs.HasKey("MusicVol"))
+        gameManager = GAMEMANAGER.Instance;
+
+        if (gameManager.getSaveData() != null)
         {
+            gameManager.Load_Game();
+
+            data = gameManager.getSaveData();
+
             LoadMusicVolume();
-        }
-        else
-        {
-            LoadMusicVolume();
-        }
-        if (PlayerPrefs.HasKey("SFXVol"))
-        {
+
             LoadSFXVolume();
         }
         else
         {
-            LoadSFXVolume();
+            Debug.Log("Game Manager data == null");
+
+            SetMusicVol();
+            SetSFXVol();
         }
+
     }
 
     public void SetMusicVol()
     {
         float volume = musicSlider.value;
-        gameMixer.SetFloat("MusicVol", Mathf.Log10(volume) * 20);
-        PlayerPrefs.SetFloat("MusicVol", volume);
+
+        data.MusicVolume = volume;
+
+        float percent = volume / 1;
+        volume = Mathf.Clamp((percent * 100) - 80, -80, 10);
+
+        gameMixer.SetFloat("MusicVol", volume);
+
+        gameManager.Save_Game();
     }
     
     public void SetSFXVol()
     {
         float volume = SFXSlider.value;
-        gameMixer.SetFloat("SFXVol", Mathf.Log10(volume) * 20);
-        PlayerPrefs.SetFloat("SFXVol", volume);
+        data.SFXVolume = volume;
+
+        float percent = volume / 1;
+        volume = Mathf.Clamp((percent * 100) - 80,-80,10);
+        
+
+        gameMixer.SetFloat("SFXVol", volume);
+
+        gameManager.Save_Game();
     }
     public void LoadMusicVolume()
     {
-        musicSlider.value = PlayerPrefs.GetFloat("MusicVol");
-
+        musicSlider.value = data.MusicVolume;
         SetMusicVol();
     }
     public void LoadSFXVolume()
     {
-        SFXSlider.value = PlayerPrefs.GetFloat("SFXVol");
+        SFXSlider.value = data.MusicVolume;
 
         SetSFXVol();
     }

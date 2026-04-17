@@ -117,8 +117,6 @@ public class CartScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Update the MPH text
-        debugText.text = "MPH: " + Mathf.Round(rb.linearVelocity.magnitude);
         //Shoots a ray downwards half of the car's size with an added .2 for error
         //set grounded to true if the ray collides with an object with they layer tag
         grounded = CheckGrounded();
