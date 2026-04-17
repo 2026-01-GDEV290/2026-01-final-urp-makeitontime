@@ -64,17 +64,17 @@ public class GAMEMANAGER : MonoBehaviour
         string saveDataJSON = JsonUtility.ToJson(foreignSaveData);
         Debug.Log(filePath);
         System.IO.File.WriteAllText(filePath, saveDataJSON);
-        Debug.Log("Game is saved");
+        Debug.Log("Game is saved at: " + filePath);
     }
 }
 [System.Serializable]
 public class SaveData
 {
-    public string Hi_Score_Level_One;
-    public string Hi_Score_Level_Two;
-    public string Hi_Score_Level_Three;
-    public string Hi_Score_Level_Four;
-    public string Hi_Score_Level_Five;
+    public float Hi_Score_Level_One;
+    public float Hi_Score_Level_Two;
+    public float Hi_Score_Level_Three;
+    public float Hi_Score_Level_Four;
+    public float Hi_Score_Level_Five;
 
     public bool Level_One_Locked;
     public bool Level_Two_Locked;

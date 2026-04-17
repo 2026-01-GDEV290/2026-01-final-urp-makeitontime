@@ -16,16 +16,20 @@ public class GoalScript : MonoBehaviour
     [SerializeField]
     LoadingScreenScript loadingScreen;
 
+    [SerializeField]
+    GAMEMANAGER gameManager;
+
     float time;
     private void Start()
     {
         time = 0;
         resultScreen.SetActive(false);
         loadingScreen = FindFirstObjectByType<LoadingScreenScript>();
+        gameManager = GAMEMANAGER.Instance;
     }
     private void Update()
     {
-        debugTime();
+        //debugTime();
         if (Time.timeScale == 1)
         {
             time += Time.deltaTime;
@@ -55,6 +59,34 @@ public class GoalScript : MonoBehaviour
         {
             timerText.text = string.Format("0:{0:00}:{1:00}", seconds, miliseconds);
         }
+
+        SaveData data = gameManager.getSaveData();
+
+        switch (SceneManager.GetActiveScene().buildIndex)
+        {
+            //Level One Index == 2
+            case 2:
+                if(data.Hi_Score_Level_One > time)
+                    data.Hi_Score_Level_One = time;
+                break;
+            case 3:
+                if (data.Hi_Score_Level_Two > time)
+                    data.Hi_Score_Level_Two = time;
+                break;
+            case 4:
+                if (data.Hi_Score_Level_Three > time)
+                    data.Hi_Score_Level_Three = time;
+                break;
+            case 5:
+                if (data.Hi_Score_Level_Four > time)
+                    data.Hi_Score_Level_Four = time;
+                break;
+            case 6:
+                if (data.Hi_Score_Level_Five > time)
+                    data.Hi_Score_Level_Five = time;
+                break;
+        }
+        gameManager.Save_Game(data);
         Time.timeScale = 0;
     }
 
@@ -65,7 +97,6 @@ public class GoalScript : MonoBehaviour
     public void returnToMenu()
     {
         loadingScreen.LoadLevel(1);
-
     }
     private void debugTime()
     {

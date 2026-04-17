@@ -49,7 +49,7 @@ public class AudioManager : MonoBehaviour
 
         gameMixer.SetFloat("MusicVol", volume);
 
-        gameManager.Save_Game();
+        gameManager.Save_Game(data);
     }
     
     public void SetSFXVol()
@@ -63,7 +63,7 @@ public class AudioManager : MonoBehaviour
 
         gameMixer.SetFloat("SFXVol", volume);
 
-        gameManager.Save_Game();
+        gameManager.Save_Game(data);
     }
     public void LoadMusicVolume()
     {
@@ -73,7 +73,6 @@ public class AudioManager : MonoBehaviour
     public void LoadSFXVolume()
     {
         SFXSlider.value = data.MusicVolume;
-
         SetSFXVol();
     }
 }

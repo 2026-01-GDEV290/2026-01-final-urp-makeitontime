@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -54,28 +55,42 @@ public class LevelPageScript : MonoBehaviour, IPointerEnterHandler
 
     public void updateGameInfo()
     {
-        string timeScore;
+        float timeData = 0;
+        string timeScore = "";
         switch (level)
         {
             default:
-                timeScore = "Page is not set to a level, please set it to a level in the LevelPageScript";
+                timeScore = "Page is not set to a level";
                 break;
             case 1:
-                timeScore = data.Hi_Score_Level_One;
+                timeData = data.Hi_Score_Level_One;
                 break;
             case 2:
-                timeScore = data.Hi_Score_Level_Two;
+                timeData = data.Hi_Score_Level_Two;
                 break;
             case 3:
-                timeScore = data.Hi_Score_Level_Three;
+                timeData = data.Hi_Score_Level_Three;
                 break;
             case 4:
-                timeScore = data.Hi_Score_Level_Four;
+                timeData = data.Hi_Score_Level_Four;
                 break;
             case 5:
-                timeScore = data.Hi_Score_Level_Five;
+                timeData = data.Hi_Score_Level_Five;
                 break;
         }
+
+        double minute = Mathf.FloorToInt(timeData / 60);
+        double seconds = Math.Truncate((timeData - (60 * minute)));
+        double miliseconds = ((Math.Truncate((timeData - (60 * minute)) * 100) / 100) % 1) * 100;
+        if (timeData > 10)
+        {
+            timeScore = string.Format("{0:0}:{1:00}:{2:00}", minute, seconds, miliseconds);
+        }
+        else
+        {
+            timeScore = string.Format("0:{0:00}:{1:00}", seconds, miliseconds);
+        }
+
         time.text = "Time: " + timeScore;
         Title.text = "Level " + level;
 
