@@ -66,23 +66,23 @@ public class GoalScript : MonoBehaviour
         {
             //Level One Index == 2
             case 2:
-                if(data.Hi_Score_Level_One > time)
+                if(data.Hi_Score_Level_One > time || data.Hi_Score_Level_One == 0)
                     data.Hi_Score_Level_One = time;
                 break;
             case 3:
-                if (data.Hi_Score_Level_Two > time)
+                if (data.Hi_Score_Level_Two > time || data.Hi_Score_Level_Two == 0)
                     data.Hi_Score_Level_Two = time;
                 break;
             case 4:
-                if (data.Hi_Score_Level_Three > time)
+                if (data.Hi_Score_Level_Three > time || data.Hi_Score_Level_Three == 0)
                     data.Hi_Score_Level_Three = time;
                 break;
             case 5:
-                if (data.Hi_Score_Level_Four > time)
+                if (data.Hi_Score_Level_Four > time || data.Hi_Score_Level_Four == 0)
                     data.Hi_Score_Level_Four = time;
                 break;
             case 6:
-                if (data.Hi_Score_Level_Five > time)
+                if (data.Hi_Score_Level_Five > time || data.Hi_Score_Level_Five == 0)
                     data.Hi_Score_Level_Five = time;
                 break;
         }
