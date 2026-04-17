@@ -4,6 +4,7 @@ using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GoalScript : MonoBehaviour
 {
@@ -12,12 +13,15 @@ public class GoalScript : MonoBehaviour
     GameObject resultScreen;
     [SerializeField]
     TMP_Text timerText;
+    [SerializeField]
+    LoadingScreenScript loadingScreen;
 
     float time;
     private void Start()
     {
         time = 0;
         resultScreen.SetActive(false);
+        loadingScreen = FindFirstObjectByType<LoadingScreenScript>();
     }
     private void Update()
     {
@@ -54,6 +58,15 @@ public class GoalScript : MonoBehaviour
         Time.timeScale = 0;
     }
 
+    public void retryLevel()
+    {
+        loadingScreen.LoadLevel(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void returnToMenu()
+    {
+        loadingScreen.LoadLevel(1);
+
+    }
     private void debugTime()
     {
         double minute = Mathf.FloorToInt(time / 60);

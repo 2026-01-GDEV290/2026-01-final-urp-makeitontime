@@ -9491,36 +9491,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 983085048655238956, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 983085048655238956, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2047014231}
-    - target: {fileID: 983085048655238956, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 983085048655238956, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LoadingScreenScript, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 983085048655238956, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 983085048655238956, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 2001205974317889203, guid: b06803ed02aaf034fa9d2ec60e4658cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9570,36 +9540,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3670719400767995095, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3670719400767995095, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2047014231}
-    - target: {fileID: 3670719400767995095, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3670719400767995095, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LoadingScreenScript, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3670719400767995095, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3670719400767995095, guid: b06803ed02aaf034fa9d2ec60e4658cc,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5395737245373478814, guid: b06803ed02aaf034fa9d2ec60e4658cc,
         type: 3}
@@ -258064,18 +258004,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbb8c95f76794c64c99b3ac93760e32e, type: 3}
---- !u!114 &2047014231 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7000304374280105865, guid: cbb8c95f76794c64c99b3ac93760e32e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2047014230}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c547c20d4ed159542b7f2dc1eab03a75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2047920726
 GameObject:
   m_ObjectHideFlags: 0
