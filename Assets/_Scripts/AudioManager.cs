@@ -16,34 +16,26 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        gameManager = FindFirstObjectByType<GAMEMANAGER>();
-        if (gameManager != null)
+        gameManager = GAMEMANAGER.Instance;
+
+        if (gameManager.getSaveData() != null)
         {
+            gameManager.Load_Game();
+
             data = gameManager.getSaveData();
-        }
-        else
-        {
-            Debug.Log("Game Manager == null");
-        }
 
-        gameManager.Load_Game();
-
-        if (data.MusicVolume >= 0f && data.MusicVolume <= .75f)
-        {
             LoadMusicVolume();
-        }
-        else
-        {
-            SetMusicVol();
-        }
-        if (data.SFXVolume >= 0f && data.SFXVolume <= .75f)
-        {
+
             LoadSFXVolume();
         }
         else
         {
+            Debug.Log("Game Manager data == null");
+
+            SetMusicVol();
             SetSFXVol();
         }
+
     }
 
     public void SetMusicVol()

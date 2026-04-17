@@ -4,10 +4,10 @@ public class GAMEMANAGER : MonoBehaviour
 {
     private SaveData saveData;
 
-    public GAMEMANAGER Instance;
+    public static GAMEMANAGER Instance;
 
     private string filePath;
-    
+
     //Create Singleton
     private void Awake()
     {
@@ -21,7 +21,9 @@ public class GAMEMANAGER : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         
         //get persitentDataPath which is never deleted even when game is deleted
-        filePath = Application.persistentDataPath + "/SaveData.json";
+        filePath = Application.persistentDataPath + "/saveData.json";
+        Debug.Log(filePath);
+        Load_Game();
     }
     public SaveData getSaveData()
     {
@@ -29,16 +31,32 @@ public class GAMEMANAGER : MonoBehaviour
     }
     public void Load_Game()
     {
-        string saveDataJSON = System.IO.File.ReadAllText(filePath);
+        if (System.IO.File.Exists(filePath))
+        {
+            string saveDataJSON = System.IO.File.ReadAllText(filePath);
+            saveData = JsonUtility.FromJson<SaveData>(saveDataJSON);
+            Debug.Log("Loaded save file: " + filePath);
+        }
+        else
+        {
+            Debug.Log("No save file found, creating new data");
 
-        saveData = JsonUtility.FromJson<SaveData>(saveDataJSON);
+            saveData = new SaveData();
+            Save_Game();
+        }
     }
 
     public void Save_Game()
-    { 
-        string saveDataJSON = JsonUtility.ToJson(saveData);
-        Debug.Log(filePath);
+    {
+        if (saveData == null)
+        {
+            Debug.LogWarning("saveData was null, creating new SaveData");
+            saveData = new SaveData();
+        }
+
+        string saveDataJSON = JsonUtility.ToJson(saveData, true);
         System.IO.File.WriteAllText(filePath, saveDataJSON);
+
         Debug.Log("Game is saved");
     }
     public void Save_Game(SaveData foreignSaveData)

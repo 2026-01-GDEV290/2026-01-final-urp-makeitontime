@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class GameLoadStart : MonoBehaviour
 {
+    [SerializeField]
     LoadingScreenScript loadingScreenScript;
     private void Awake()
     {

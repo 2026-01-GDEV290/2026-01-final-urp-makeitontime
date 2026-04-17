@@ -13,7 +13,7 @@ public class PauseScreen : MonoBehaviour
     }
     public void GoToMenu()
     {
-        loadingScreenScript.LoadLevel(0);
+        loadingScreenScript.LoadLevel(1);
     }
     public void Continue()
     {
