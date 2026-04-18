@@ -16,6 +16,8 @@ public class GoalScript : MonoBehaviour
     [SerializeField]
     LoadingScreenScript loadingScreen;
 
+    bool gameWonBool = false;
+
     [SerializeField]
     GAMEMANAGER gameManager;
 
@@ -34,6 +36,10 @@ public class GoalScript : MonoBehaviour
         {
             time += Time.deltaTime;
         }
+        if (gameWonBool == true)
+        {
+            Time.timeScale = 0;
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -49,6 +55,7 @@ public class GoalScript : MonoBehaviour
 
     private void gameWon()
     {
+        gameWonBool = true;
         resultScreen.SetActive(true);
         double minute = Mathf.FloorToInt(time / 60);
         double seconds = Math.Truncate((time - (60 * minute)));
