@@ -41,6 +41,8 @@ public class GoalScript : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             Debug.Log("Collisin with player");
+            Time.timeScale = 0;
+
             gameWon();
         }
     }
@@ -59,6 +61,8 @@ public class GoalScript : MonoBehaviour
         {
             timerText.text = string.Format("0:{0:00}:{1:00}", seconds, miliseconds);
         }
+
+        gameManager.Load_Game();
 
         SaveData data = gameManager.getSaveData();
 
@@ -87,7 +91,6 @@ public class GoalScript : MonoBehaviour
                 break;
         }
         gameManager.Save_Game(data);
-        Time.timeScale = 0;
     }
 
     public void retryLevel()
