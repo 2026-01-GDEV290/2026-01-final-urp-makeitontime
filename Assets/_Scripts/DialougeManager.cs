@@ -53,10 +53,6 @@ public class DialougeManager : MonoBehaviour
         {
             Time.timeScale = 0;
         }
-        else
-        {
-            Time.timeScale = 1;
-        }
     }
     void updateDialouge()
     {
@@ -64,9 +60,9 @@ public class DialougeManager : MonoBehaviour
 
         if (sNum >= scene.screen.Length)
         {
+            isInDialouge = false;
             Time.timeScale = 1;
             dialougeCanvas.SetActive(false);
-            isInDialouge = false;
             return;
         }
 
