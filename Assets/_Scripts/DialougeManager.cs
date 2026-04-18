@@ -27,6 +27,7 @@ public class DialougeManager : MonoBehaviour
     [SerializeField]
     AudioSource source;
     int sNum;
+    bool isInDialouge;
 
     float h;
     float s;
@@ -38,6 +39,7 @@ public class DialougeManager : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 0;
+        isInDialouge = true;
         updateDialouge();
     }
     // Update is called once per frame
@@ -46,6 +48,14 @@ public class DialougeManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
         {
             updateDialouge();
+        }
+        if (isInDialouge)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
         }
     }
     void updateDialouge()
@@ -56,6 +66,7 @@ public class DialougeManager : MonoBehaviour
         {
             Time.timeScale = 1;
             dialougeCanvas.SetActive(false);
+            isInDialouge = false;
             return;
         }
 
