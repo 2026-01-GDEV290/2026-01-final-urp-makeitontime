@@ -15,7 +15,10 @@ public class GoalScript : MonoBehaviour
     TMP_Text timerText;
     [SerializeField]
     LoadingScreenScript loadingScreen;
-
+    [SerializeField]
+    AudioSource musicPlayer;
+    [SerializeField]
+    AudioClip resultsMusic;
     bool gameWonBool = false;
 
     [SerializeField]
@@ -28,6 +31,7 @@ public class GoalScript : MonoBehaviour
         resultScreen.SetActive(false);
         loadingScreen = FindFirstObjectByType<LoadingScreenScript>();
         gameManager = GAMEMANAGER.Instance;
+        musicPlayer = GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -68,6 +72,10 @@ public class GoalScript : MonoBehaviour
         {
             timerText.text = string.Format("0:{0:00}:{1:00}", seconds, miliseconds);
         }
+
+        musicPlayer.Stop();
+        musicPlayer.clip = resultsMusic;
+        musicPlayer.Play();
 
         gameManager.Load_Game();
 

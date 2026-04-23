@@ -323,6 +323,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7045537381274719311}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &241461037868269448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1436504190434677803}
+  - component: {fileID: 581085932605456486}
+  m_Layer: 0
+  m_Name: PostPro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1436504190434677803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241461037868269448}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 356590420348967478}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &581085932605456486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241461037868269448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 138a5726e2efd3446bd31230a65f2812, type: 2}
 --- !u!1 &300704076208235078
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,7 +836,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -987,6 +1036,7 @@ Transform:
   - {fileID: 7900794031574201400}
   - {fileID: 5108934571853283227}
   - {fileID: 6222161200386897066}
+  - {fileID: 1436504190434677803}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281011366978816917
@@ -1235,6 +1285,26 @@ MonoBehaviour:
   gameMixer: {fileID: 24100000, guid: fa4cb957694859e42a108cdfc4e00724, type: 2}
   musicSlider: {fileID: 1790601921109538304}
   SFXSlider: {fileID: 8595217983626291816}
+  gameManager: {fileID: 0}
+  data:
+    Hi_Score_Level_One: 0
+    Hi_Score_Level_Two: 0
+    Hi_Score_Level_Three: 0
+    Hi_Score_Level_Four: 0
+    Hi_Score_Level_Five: 0
+    Level_One_Locked: 0
+    Level_Two_Locked: 0
+    Level_Three_Locked: 0
+    Level_Four_Locked: 0
+    Level_Five_Locked: 0
+    Level_One_B_Side_Locked: 0
+    Level_Two_B_Side_Locked: 0
+    Level_Three_B_Side_Locked: 0
+    Level_Four_B_Side_Locked: 0
+    Level_Five_B_Side_Locked: 0
+    SFXVolume: 0.5
+    MusicVolume: 0.5
+    valueThree: 
 --- !u!1 &1620805260948539215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2452,7 +2522,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -4829,6 +4899,26 @@ MonoBehaviour:
   gameMixer: {fileID: 24100000, guid: fa4cb957694859e42a108cdfc4e00724, type: 2}
   musicSlider: {fileID: 1790601921109538304}
   SFXSlider: {fileID: 8595217983626291816}
+  gameManager: {fileID: 0}
+  data:
+    Hi_Score_Level_One: 0
+    Hi_Score_Level_Two: 0
+    Hi_Score_Level_Three: 0
+    Hi_Score_Level_Four: 0
+    Hi_Score_Level_Five: 0
+    Level_One_Locked: 0
+    Level_Two_Locked: 0
+    Level_Three_Locked: 0
+    Level_Four_Locked: 0
+    Level_Five_Locked: 0
+    Level_One_B_Side_Locked: 0
+    Level_Two_B_Side_Locked: 0
+    Level_Three_B_Side_Locked: 0
+    Level_Four_B_Side_Locked: 0
+    Level_Five_B_Side_Locked: 0
+    SFXVolume: 0.5
+    MusicVolume: 0.5
+    valueThree: 
 --- !u!1 &7692589270551017061
 GameObject:
   m_ObjectHideFlags: 0

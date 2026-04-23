@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - cop
+  - civ
+  - goal
+  - music
   layers:
   - Default
   - TransparentFX

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9aa89c4394c2074f9d6c0e0e576046f, type: 3}
+  m_Name: Screen 7
+  m_EditorClassIdentifier: 
+  leftSpeaking: 1
+  textColor: {r: 1, g: 0, b: 0.9607843, a: 1}
+  nameColor: {r: 1, g: 0, b: 0.9607843, a: 1}
+  charOne: {fileID: 21300000, guid: 912cebbb69e83c54399796af96aea39a, type: 3}
+  charTwo: {fileID: 21300000, guid: a0cf37e4e817ac745a4d55d097d9df0f, type: 3}
+  voiceOver: {fileID: 8300000, guid: b585232d904dad84aa6ba00c93b7d212, type: 3}
+  charSpeakingName: Pearl
+  text: I'm sorry but I'm gonna be late for work! You have to let me go!

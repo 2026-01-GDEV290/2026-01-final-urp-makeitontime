@@ -580,6 +580,9 @@ MonoBehaviour:
   resultScreen: {fileID: 8915427168183841565}
   timerText: {fileID: 8944395857903674906}
   loadingScreen: {fileID: 0}
+  musicPlayer: {fileID: 0}
+  resultsMusic: {fileID: 8300000, guid: ea538a9ee99279d4d813047e9e753ade, type: 3}
+  gameManager: {fileID: 0}
 --- !u!1 &5395737245373478814
 GameObject:
   m_ObjectHideFlags: 0
