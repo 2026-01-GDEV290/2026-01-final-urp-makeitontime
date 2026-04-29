@@ -787,11 +787,11 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
-  m_Dithering: 0
+  m_Dithering: 1
   m_ClearDepth: 1
   m_AllowXRRendering: 1
   m_AllowHDROutput: 1
@@ -1235,6 +1235,26 @@ MonoBehaviour:
   gameMixer: {fileID: 24100000, guid: fa4cb957694859e42a108cdfc4e00724, type: 2}
   musicSlider: {fileID: 1790601921109538304}
   SFXSlider: {fileID: 8595217983626291816}
+  gameManager: {fileID: 0}
+  data:
+    Hi_Score_Level_One: 0
+    Hi_Score_Level_Two: 0
+    Hi_Score_Level_Three: 0
+    Hi_Score_Level_Four: 0
+    Hi_Score_Level_Five: 0
+    Level_One_Locked: 0
+    Level_Two_Locked: 0
+    Level_Three_Locked: 0
+    Level_Four_Locked: 0
+    Level_Five_Locked: 0
+    Level_One_B_Side_Locked: 0
+    Level_Two_B_Side_Locked: 0
+    Level_Three_B_Side_Locked: 0
+    Level_Four_B_Side_Locked: 0
+    Level_Five_B_Side_Locked: 0
+    SFXVolume: 0.5
+    MusicVolume: 0.5
+    valueThree: 
 --- !u!1 &1620805260948539215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2452,11 +2472,11 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
-  m_Dithering: 0
+  m_Dithering: 1
   m_ClearDepth: 1
   m_AllowXRRendering: 1
   m_AllowHDROutput: 1
@@ -4829,6 +4849,26 @@ MonoBehaviour:
   gameMixer: {fileID: 24100000, guid: fa4cb957694859e42a108cdfc4e00724, type: 2}
   musicSlider: {fileID: 1790601921109538304}
   SFXSlider: {fileID: 8595217983626291816}
+  gameManager: {fileID: 0}
+  data:
+    Hi_Score_Level_One: 0
+    Hi_Score_Level_Two: 0
+    Hi_Score_Level_Three: 0
+    Hi_Score_Level_Four: 0
+    Hi_Score_Level_Five: 0
+    Level_One_Locked: 0
+    Level_Two_Locked: 0
+    Level_Three_Locked: 0
+    Level_Four_Locked: 0
+    Level_Five_Locked: 0
+    Level_One_B_Side_Locked: 0
+    Level_Two_B_Side_Locked: 0
+    Level_Three_B_Side_Locked: 0
+    Level_Four_B_Side_Locked: 0
+    Level_Five_B_Side_Locked: 0
+    SFXVolume: 0.5
+    MusicVolume: 0.5
+    valueThree: 
 --- !u!1 &7692589270551017061
 GameObject:
   m_ObjectHideFlags: 0
