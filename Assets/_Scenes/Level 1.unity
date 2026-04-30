@@ -121711,6 +121711,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1223857326}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &796451585 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7000304374280105865, guid: cbb8c95f76794c64c99b3ac93760e32e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2047014230}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c547c20d4ed159542b7f2dc1eab03a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &797226583 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1445808650455439567, guid: 0c54360ddc70de74ca78403176db02eb,
@@ -254517,6 +254529,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4539232973684622385, guid: 8764d6250c593b448837b5be0c9add55,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5317660959481249476, guid: 8764d6250c593b448837b5be0c9add55,
         type: 3}
       propertyPath: m_Pivot.x
@@ -291128,6 +291145,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 157753561882772004, guid: e4905cfbd255d134fbc0519c0f7862fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 796451585}
+    - target: {fileID: 157753561882772004, guid: e4905cfbd255d134fbc0519c0f7862fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 1790014695423622376, guid: e4905cfbd255d134fbc0519c0f7862fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -291182,6 +291209,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameOverUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972695567271419032, guid: e4905cfbd255d134fbc0519c0f7862fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 796451585}
+    - target: {fileID: 7972695567271419032, guid: e4905cfbd255d134fbc0519c0f7862fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
