@@ -632,6 +632,7 @@ MonoBehaviour:
   anim: {fileID: 2747153834906457242}
   bark: {fileID: 2038958548699987451}
   bars: {fileID: 7674709448283973683}
+  gameFreeze: {fileID: 0}
 --- !u!1 &4032764503893444878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,7 +1059,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 56620a02493bd6942b7dcf26a6c50e28, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
