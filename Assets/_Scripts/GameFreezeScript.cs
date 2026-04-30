@@ -6,7 +6,12 @@ public class GameFreezeScript : MonoBehaviour
     bool pause = false;
     bool gameWon = false;
     bool dialouge = false;
-   public void pauseGame()
+
+    private void Awake()
+    {
+        checkIfShouldBePaused();
+    }
+    public void pauseGame()
     {
         pause = true;
         checkIfShouldBePaused();
