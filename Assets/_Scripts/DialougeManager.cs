@@ -26,6 +26,10 @@ public class DialougeManager : MonoBehaviour
     DialougeScriptableObject scene;
     [SerializeField]
     AudioSource source;
+
+    [SerializeField]
+    GameFreezeScript gameFreeze;
+
     int sNum;
     bool isInDialouge;
 
@@ -35,10 +39,11 @@ public class DialougeManager : MonoBehaviour
     private void Awake()
     {
         sNum = -1;
+        gameFreeze = FindFirstObjectByType<GameFreezeScript>();
     }
     private void Start()
     {
-        Time.timeScale = 0;
+        gameFreeze.dialougeScreen();
         isInDialouge = true;
         updateDialouge();
     }
@@ -51,7 +56,7 @@ public class DialougeManager : MonoBehaviour
         }
         if (isInDialouge)
         {
-            Time.timeScale = 0;
+            gameFreeze.dialougeScreen();
         }
     }
     void updateDialouge()
@@ -61,7 +66,7 @@ public class DialougeManager : MonoBehaviour
         if (sNum >= scene.screen.Length)
         {
             isInDialouge = false;
-            Time.timeScale = 1;
+            gameFreeze.undialougeScreen();
             dialougeCanvas.SetActive(false);
             return;
         }

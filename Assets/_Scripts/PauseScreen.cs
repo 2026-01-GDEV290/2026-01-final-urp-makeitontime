@@ -7,8 +7,11 @@ public class PauseScreen : MonoBehaviour
     bool isPaused = false;
     [SerializeField]
     GameObject pauseScreen;
+    [SerializeField]
+    GameFreezeScript gameFreeze;
     private void Start()
     {
+        gameFreeze = FindFirstObjectByType<GameFreezeScript>();
         loadingScreenScript = FindFirstObjectByType<LoadingScreenScript>();
     }
     public void GoToMenu()
@@ -23,24 +26,24 @@ public class PauseScreen : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) )
         {
-            if (Time.timeScale != 0f && !isPaused)
+            if (!isPaused)
             {
+                gameFreeze.pauseGame();
                 isPaused = true;
             }
             else
             {
+                gameFreeze.unpause();
                 isPaused = false;
             }
         }
         if (isPaused)
         {
-            Time.timeScale = 0f;
             pauseScreen.SetActive(true);
         }
         else
         {
             pauseScreen.SetActive(false);
-            Time.timeScale = 1.0f;
         }
     }
 }

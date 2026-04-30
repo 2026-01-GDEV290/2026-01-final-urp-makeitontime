@@ -11,20 +11,23 @@ public class GameOverScript : MonoBehaviour
     AudioSource bark;
     [SerializeField]
     AudioSource bars;
+    [SerializeField]
+    GameFreezeScript gameFreeze;
 
     bool gameOver = false;
 
     private void Awake()
     {
-        Time.timeScale = 1;
         gameOverUI.SetActive(false);
         bars.Play();
+        gameFreeze = FindFirstObjectByType<GameFreezeScript>();
+        gameFreeze.ungameLoseEnded();
     }
     public void GameOver()
     {
         if (gameOver == false)
         {
-            Time.timeScale = 0f;
+            gameFreeze.gameLoseEnded();
             gameOverUI.SetActive(true);
             anim.Play("GameOver");
             StartCoroutine(PlayBark());

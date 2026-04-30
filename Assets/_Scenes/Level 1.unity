@@ -13406,6 +13406,50 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8553668718618747853, guid: 943285f313d5b0b4799e913673569f98, type: 3}
+--- !u!1 &72857055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 72857057}
+  - component: {fileID: 72857056}
+  m_Layer: 0
+  m_Name: GameFreeze
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &72857056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72857055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeca3b4b53d3fc1419a7ed02aca3a032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &72857057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72857055}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 218.01494, y: 0, z: 165.58676}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &72912324
 GameObject:
   m_ObjectHideFlags: 0
@@ -90146,6 +90190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cop (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -132750,6 +132799,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cop (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -134889,6 +134943,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cop (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -137167,6 +137226,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cop (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -137544,6 +137608,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cop (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -180501,6 +180570,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cop (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -234268,6 +234342,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cop (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -253178,6 +253257,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cop
       objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -261815,6 +261899,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cop (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -278817,6 +278906,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cop (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -282693,6 +282787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cop (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -307253,6 +307352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cop (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -403669,6 +403773,7 @@ MonoBehaviour:
   timerText: {fileID: 8944395857856797429}
   loadingScreen: {fileID: 0}
   gameManager: {fileID: 0}
+  gameFreeze: {fileID: 0}
 --- !u!23 &3580379160948827374
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -493645,3 +493750,4 @@ SceneRoots:
   - {fileID: 1178040347}
   - {fileID: 899527566}
   - {fileID: 1866290986}
+  - {fileID: 72857057}

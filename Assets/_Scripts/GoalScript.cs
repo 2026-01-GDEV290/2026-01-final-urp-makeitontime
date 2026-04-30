@@ -20,6 +20,8 @@ public class GoalScript : MonoBehaviour
 
     [SerializeField]
     GAMEMANAGER gameManager;
+    [SerializeField]
+    GameFreezeScript gameFreeze;
 
     float time;
     private void Start()
@@ -28,6 +30,7 @@ public class GoalScript : MonoBehaviour
         resultScreen.SetActive(false);
         loadingScreen = FindFirstObjectByType<LoadingScreenScript>();
         gameManager = GAMEMANAGER.Instance;
+        gameFreeze = FindFirstObjectByType<GameFreezeScript>();
     }
     private void Update()
     {
@@ -38,7 +41,7 @@ public class GoalScript : MonoBehaviour
         }
         if (gameWonBool == true)
         {
-            Time.timeScale = 0;
+            gameFreeze.gameWonEnd();
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -47,7 +50,6 @@ public class GoalScript : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             Debug.Log("Collisin with player");
-            Time.timeScale = 0;
 
             gameWon();
         }
