@@ -191,13 +191,13 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 315a2b48d107f624d9547c4c1bd0fa71, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.594
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 169
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -289,6 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   destroy: 0
+  source: {fileID: 0}
 --- !u!1 &3307763491876207924
 GameObject:
   m_ObjectHideFlags: 0
