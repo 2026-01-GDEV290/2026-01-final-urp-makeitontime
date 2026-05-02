@@ -27,13 +27,17 @@ public class CopAI : MonoBehaviour
     private void Start()
     {
         playerTransform = FindFirstObjectByType<CartScript>().gameObject.transform;
-        child = GetComponentInChildren<GameObject>();
-        childSource = child.GetComponent<AudioSource>();
+       // child = GetComponentInChildren<GameObject>();
+        //childSource = child.GetComponent<AudioSource>();
     }
     private void Update()
     {
+        if (gameObject.activeInHierarchy == false)
+        {
+            return;
+        }
         float distance = Vector3.Distance(transform.position,playerTransform.position);
-        if (distance < 75)
+        if (distance < 75 && agent.enabled == true)
         {
             agent.SetDestination(playerTransform.position);
         }else if(remapPath)
@@ -45,6 +49,7 @@ public class CopAI : MonoBehaviour
         if (destroyed && !childSource.isPlaying)
         {
             destroyed = false;
+            agent.enabled = false;
             gameObject.SetActive(false);
         }
     }
