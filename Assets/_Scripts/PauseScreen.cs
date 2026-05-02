@@ -21,6 +21,14 @@ public class PauseScreen : MonoBehaviour
     public void Continue()
     {
         isPaused = !isPaused;
+        if (isPaused)
+        {
+            gameFreeze.pauseGame();
+        }
+        else
+        {
+            gameFreeze.unpause();
+        }
     }
     private void Update()
     {
