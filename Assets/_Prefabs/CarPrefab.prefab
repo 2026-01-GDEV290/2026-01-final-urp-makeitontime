@@ -1220,6 +1220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingScreenScript: {fileID: 0}
   pauseScreen: {fileID: 3016653918897029999}
+  gameFreeze: {fileID: 0}
 --- !u!114 &6004445806721620457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2704,7 +2705,7 @@ Transform:
   m_GameObject: {fileID: 3981438856888256436}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: -3}
+  m_LocalPosition: {x: 2, y: -1.4099998, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3895,7 +3896,7 @@ Transform:
   m_GameObject: {fileID: 6536029405030517564}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: -3}
+  m_LocalPosition: {x: -2, y: -1.4099998, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4616,6 +4617,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1620805260948539215}
+  anim: {fileID: 0}
+  bark: {fileID: 0}
+  bars: {fileID: 0}
+  gameFreeze: {fileID: 0}
 --- !u!1 &7459286507356089570
 GameObject:
   m_ObjectHideFlags: 0
@@ -4894,7 +4899,7 @@ Transform:
   m_GameObject: {fileID: 7692589270551017061}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 3}
+  m_LocalPosition: {x: -2, y: -1.41, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5082,7 +5087,7 @@ Transform:
   m_GameObject: {fileID: 8855755341252917303}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 3}
+  m_LocalPosition: {x: 2, y: -1.4099998, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
