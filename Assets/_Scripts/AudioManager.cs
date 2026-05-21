@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour
     Slider musicSlider;
     [SerializeField]
     Slider SFXSlider;
+    [SerializeField]
+    Slider dialougeSlider;
 
     public GAMEMANAGER gameManager = null;
     public SaveData data;
@@ -27,6 +29,8 @@ public class AudioManager : MonoBehaviour
             LoadMusicVolume();
 
             LoadSFXVolume();
+
+            LoadDialougeVolume();
         }
         else
         {
@@ -34,8 +38,21 @@ public class AudioManager : MonoBehaviour
 
             SetMusicVol();
             SetSFXVol();
+            SetDialougeVol();
         }
 
+    }
+
+    public void SetDialougeVol()
+    {
+        float volume = data.DialougeVolume;
+
+        float percent = volume / 1;
+        volume = Mathf.Clamp((percent * 100) - 80, -80, 10);
+
+        gameMixer.SetFloat("DialougeVol", volume);
+
+        gameManager.Save_Game(data);
     }
 
     public void SetMusicVol()
@@ -65,6 +82,11 @@ public class AudioManager : MonoBehaviour
 
         gameManager.Save_Game(data);
     }
+    public void LoadDialougeVolume()
+    {
+        dialougeSlider.value = data.DialougeVolume;
+        SetDialougeVol();
+    }
     public void LoadMusicVolume()
     {
         musicSlider.value = data.MusicVolume;
@@ -72,7 +94,7 @@ public class AudioManager : MonoBehaviour
     }
     public void LoadSFXVolume()
     {
-        SFXSlider.value = data.MusicVolume;
+        SFXSlider.value = data.SFXVolume;
         SetSFXVol();
     }
 }

@@ -841,6 +841,7 @@ MonoBehaviour:
   dialougeCanvas: {fileID: 8153014019130195562}
   scene: {fileID: 11400000, guid: b63fba75dcaa2e342b1bc9910d65a1dc, type: 2}
   source: {fileID: 5390623694253246704}
+  gameFreeze: {fileID: 0}
 --- !u!82 &5390623694253246704
 AudioSource:
   m_ObjectHideFlags: 0
@@ -850,7 +851,7 @@ AudioSource:
   m_GameObject: {fileID: 8035818616061290484}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 7493774558337524792, guid: fa4cb957694859e42a108cdfc4e00724,
+  OutputAudioMixerGroup: {fileID: -1854765999471909602, guid: fa4cb957694859e42a108cdfc4e00724,
     type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}

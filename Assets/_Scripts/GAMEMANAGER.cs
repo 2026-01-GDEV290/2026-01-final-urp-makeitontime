@@ -90,5 +90,6 @@ public class SaveData
 
     public float SFXVolume = 0.5f;
     public float MusicVolume = 0.5f;
+    public float DialougeVolume = 0.5f;
     public string valueThree;
 }
