@@ -11,6 +11,11 @@ public class CollectableScript : MonoBehaviour
     [SerializeField]
     AudioSource audioSource;
 
+    [SerializeField]
+    GameObject UI;
+    [SerializeField]
+    Animator UIanim;
+
     Collider myCollider;
     private void Start()
     {
@@ -18,6 +23,7 @@ public class CollectableScript : MonoBehaviour
         myCollider = GetComponent<Collider>();
         // Set the coin to be collectable
         SetCollectOn();
+        UI.SetActive(false);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -42,6 +48,8 @@ public class CollectableScript : MonoBehaviour
         myCollider.enabled = false;
         Particles.SetActive(true);
         Sprite.SetActive(false);
+        UI.SetActive(true);
+        UIanim.SetTrigger("Collect");
         audioSource.pitch = Random.Range(1f,1.15f);
         audioSource.Play();
     }

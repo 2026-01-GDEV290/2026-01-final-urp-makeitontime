@@ -410,6 +410,8 @@ MonoBehaviour:
   Particles: {fileID: 8606755396358346167}
   Sprite: {fileID: 2262423287305879976}
   audioSource: {fileID: 8898708769683755587}
+  UI: {fileID: 2216028993034378481}
+  UIanim: {fileID: 4604751880415179575}
 --- !u!65 &4017414272732756957
 BoxCollider:
   m_ObjectHideFlags: 0
