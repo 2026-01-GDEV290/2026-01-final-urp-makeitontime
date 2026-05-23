@@ -8,6 +8,8 @@ public class GAMEMANAGER : MonoBehaviour
 
     private string filePath;
 
+    bool usingCD = false;
+
     //Create Singleton
     private void Awake()
     {
@@ -71,6 +73,14 @@ public class GAMEMANAGER : MonoBehaviour
         saveData = new SaveData();
         Save_Game();
     }
+    public void SetCD(bool value)
+    {
+        usingCD = value;
+    }
+    public bool getUseCD()
+    {
+        return usingCD;
+    }
 }
 [System.Serializable]
 public class SaveData
@@ -87,11 +97,11 @@ public class SaveData
     public bool Level_Four_Locked = false;
     public bool Level_Five_Locked = false;
 
-    public bool Level_One_B_Side_Locked = false;
-    public bool Level_Two_B_Side_Locked = false;
-    public bool Level_Three_B_Side_Locked = false;
-    public bool Level_Four_B_Side_Locked = false;
-    public bool Level_Five_B_Side_Locked = false;
+    public bool Level_One_B_Side_Locked = true;
+    public bool Level_Two_B_Side_Locked = true;
+    public bool Level_Three_B_Side_Locked = true;
+    public bool Level_Four_B_Side_Locked = true;
+    public bool Level_Five_B_Side_Locked = true;
 
     public float SFXVolume = 0.5f;
     public float MusicVolume = 0.5f;

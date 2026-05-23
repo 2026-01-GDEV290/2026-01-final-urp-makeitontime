@@ -32,6 +32,10 @@ public class LevelPageScript : MonoBehaviour, IPointerEnterHandler
     [SerializeField]
     LoadingScreenScript loadingScreen;
 
+    bool usingCD = false;
+    [SerializeField]
+    GameObject CDGO;
+
     GAMEMANAGER gameManager;
     SaveData data;
     private void Awake()
@@ -50,6 +54,7 @@ public class LevelPageScript : MonoBehaviour, IPointerEnterHandler
 
     public void play()
     {
+        GAMEMANAGER.Instance.SetCD(usingCD);
         loadingScreen.LoadLevel(level + 1);
     }
 
@@ -116,6 +121,37 @@ public class LevelPageScript : MonoBehaviour, IPointerEnterHandler
         selectedGO.SetActive(false);
 
         selected = false;
+    }
+
+    public void SetCD()
+    {
+        switch (level)
+        {
+            default:
+                Debug.LogWarning("CD doesnt exist yet for this level, if you see this message please tell emery to add it in");
+                break;
+            case 1:
+                if (data.Level_One_B_Side_Locked == false)
+                    usingCD = !usingCD;
+                break;
+            case 2:
+                if (data.Level_Two_B_Side_Locked == false)
+                    usingCD = !usingCD;
+                break;
+            case 3:
+                if (data.Level_Three_B_Side_Locked == false)
+                    usingCD = !usingCD;
+                break;
+            case 4:
+                if (data.Level_Four_B_Side_Locked == false)
+                    usingCD = !usingCD;
+                break;
+            case 5:
+                if (data.Level_Five_B_Side_Locked == false)
+                    usingCD = !usingCD;
+                break;
+        }
+        CDGO.SetActive(usingCD);
     }
 
     public void OnPointerEnter(PointerEventData eventData)

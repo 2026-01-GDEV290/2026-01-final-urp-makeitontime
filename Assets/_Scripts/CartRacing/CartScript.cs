@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class CartScript : MonoBehaviour
 {
@@ -101,7 +102,6 @@ public class CartScript : MonoBehaviour
     bool CDThree;
     [SerializeField]
     public bool CDFour;
-
     private float jumpTimer;
     private bool justJumped;
 
@@ -109,6 +109,32 @@ public class CartScript : MonoBehaviour
     {
         justJumped = false;
         acceleration = moveSpeed;
+
+        SaveData data = GAMEMANAGER.Instance.getSaveData();
+
+        if(GAMEMANAGER.Instance.getUseCD() == true)
+        {
+        switch (SceneManager.GetActiveScene().buildIndex)
+        {
+            //Level One Index == 2
+            case 2:
+                CDOne = true;
+                break;
+            case 3:
+                CDTwo = true;
+                break;
+            case 4:
+                CDFour = true;
+                break;
+            case 5:
+                CDThree = true;
+                break;
+            default:
+                Debug.LogWarning("CD doesnt exist yet for this level, if you see this message please tell emery to add it in");
+            break;
+        }
+        }
+
         if (CDTwo)
         {
             alignmentSpeed = 1;

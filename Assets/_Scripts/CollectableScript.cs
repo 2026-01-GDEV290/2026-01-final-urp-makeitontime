@@ -50,20 +50,20 @@ public class CollectableScript : MonoBehaviour
         {
             //Level One Index == 2
             case 2:
-                if(data.Level_One_B_Side_Locked == false)
-                    data.Level_One_B_Side_Locked = true;
+                if(data.Level_One_B_Side_Locked == true)
+                    data.Level_One_B_Side_Locked = false;
                 break;
             case 3:
-                if (data.Level_Two_B_Side_Locked == false)
-                    data.Level_Two_B_Side_Locked = true;
+                if (data.Level_Two_B_Side_Locked == true)
+                    data.Level_Two_B_Side_Locked = false;
                 break;
             case 4:
-                if (data.Level_Three_B_Side_Locked == false)
-                    data.Level_Three_B_Side_Locked = true;
+                if (data.Level_Three_B_Side_Locked == true)
+                    data.Level_Three_B_Side_Locked = false;
                 break;
             case 5:
-                if (data.Level_Four_B_Side_Locked == false)
-                    data.Level_Four_B_Side_Locked = true;
+                if (data.Level_Four_B_Side_Locked == true)
+                    data.Level_Four_B_Side_Locked = false;
                 break;
             case 6:
                 if (data.Level_Five_B_Side_Locked == false)
