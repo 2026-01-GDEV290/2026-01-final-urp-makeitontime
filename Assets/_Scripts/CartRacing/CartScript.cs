@@ -159,7 +159,26 @@ public class CartScript : MonoBehaviour
     }
     bool CheckGrounded()
     {
-         return Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, GroundLayers);
+        //return Physics.Raycast(transform.position, Vector3.down, carHeight * .5f + .2f, GroundLayers);
+         
+        bool isGrounded = false;
+         if(Physics.Raycast(backLeftCar.position, Vector3.down, carHeight * .5f + .2f, GroundLayers))
+         {
+             isGrounded = true;
+         }
+         else if(Physics.Raycast(backRightCar.position, Vector3.down, carHeight * .5f + .2f, GroundLayers))
+         {
+             isGrounded = true;
+         }
+         else if(Physics.Raycast(frontLeftCar.position, Vector3.down, carHeight * .5f + .2f, GroundLayers))
+         {
+             isGrounded = true;
+         }
+         else if(Physics.Raycast(frontRightCar.position, Vector3.down, carHeight * .5f + .2f, GroundLayers))
+         {
+             isGrounded = true;
+         }
+         return isGrounded;
     }
     void AlignToRamp()
     {
