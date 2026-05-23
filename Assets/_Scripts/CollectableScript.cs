@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class CollectableScript : MonoBehaviour
@@ -15,10 +16,13 @@ public class CollectableScript : MonoBehaviour
     GameObject UI;
     [SerializeField]
     Animator UIanim;
+    [SerializeField]
+    GAMEMANAGER gameManager;
 
     Collider myCollider;
     private void Start()
     {
+        gameManager = GAMEMANAGER.Instance;
         // Set myCollider to this obj's collider
         myCollider = GetComponent<Collider>();
         // Set the coin to be collectable
@@ -27,7 +31,6 @@ public class CollectableScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-
         //if the other's gameObject has a CartScript (Which would ideally only be the player) run the collected methdod
         if (other.gameObject.GetComponent<CartScript>() != null)
         {
@@ -39,6 +42,39 @@ public class CollectableScript : MonoBehaviour
     {
         setCollectOff();
         Debug.Log("Collect");
+
+        gameManager.Load_Game();
+        SaveData data = gameManager.getSaveData();
+
+        switch (SceneManager.GetActiveScene().buildIndex)
+        {
+            //Level One Index == 2
+            case 2:
+                if(data.Level_One_B_Side_Locked == false)
+                    data.Level_One_B_Side_Locked = true;
+                break;
+            case 3:
+                if (data.Level_Two_B_Side_Locked == false)
+                    data.Level_Two_B_Side_Locked = true;
+                break;
+            case 4:
+                if (data.Level_Three_B_Side_Locked == false)
+                    data.Level_Three_B_Side_Locked = true;
+                break;
+            case 5:
+                if (data.Level_Four_B_Side_Locked == false)
+                    data.Level_Four_B_Side_Locked = true;
+                break;
+            case 6:
+                if (data.Level_Five_B_Side_Locked == false)
+                    data.Level_Five_B_Side_Locked = true;
+                break;
+            default:
+                Debug.LogWarning("Collectable in scene with no level index, cannot set save data for collectable");
+            break;
+        }
+        gameManager.Save_Game(data);
+
         StartCoroutine(respawn(5f));
     }
 
@@ -49,7 +85,7 @@ public class CollectableScript : MonoBehaviour
         Particles.SetActive(true);
         Sprite.SetActive(false);
         UI.SetActive(true);
-        UIanim.SetTrigger("Collect");
+
         audioSource.pitch = Random.Range(1f,1.15f);
         audioSource.Play();
     }

@@ -66,27 +66,32 @@ public class GAMEMANAGER : MonoBehaviour
         System.IO.File.WriteAllText(filePath, saveDataJSON);
         Debug.Log("Game is saved at: " + filePath);
     }
+    public void resetSaveData()
+    {
+        saveData = new SaveData();
+        Save_Game();
+    }
 }
 [System.Serializable]
 public class SaveData
 {
-    public float Hi_Score_Level_One;
-    public float Hi_Score_Level_Two;
-    public float Hi_Score_Level_Three;
-    public float Hi_Score_Level_Four;
-    public float Hi_Score_Level_Five;
+    public float Hi_Score_Level_One = 0;
+    public float Hi_Score_Level_Two = 0;
+    public float Hi_Score_Level_Three = 0;
+    public float Hi_Score_Level_Four = 0;
+    public float Hi_Score_Level_Five = 0;
 
-    public bool Level_One_Locked;
-    public bool Level_Two_Locked;
-    public bool Level_Three_Locked;
-    public bool Level_Four_Locked;
-    public bool Level_Five_Locked;
+    public bool Level_One_Locked = false;
+    public bool Level_Two_Locked = false;
+    public bool Level_Three_Locked = false;
+    public bool Level_Four_Locked = false;
+    public bool Level_Five_Locked = false;
 
-    public bool Level_One_B_Side_Locked;
-    public bool Level_Two_B_Side_Locked;
-    public bool Level_Three_B_Side_Locked;
-    public bool Level_Four_B_Side_Locked;
-    public bool Level_Five_B_Side_Locked;
+    public bool Level_One_B_Side_Locked = false;
+    public bool Level_Two_B_Side_Locked = false;
+    public bool Level_Three_B_Side_Locked = false;
+    public bool Level_Four_B_Side_Locked = false;
+    public bool Level_Five_B_Side_Locked = false;
 
     public float SFXVolume = 0.5f;
     public float MusicVolume = 0.5f;
