@@ -7471,6 +7471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 737363071}
+  - component: {fileID: 737363072}
   m_Layer: 0
   m_Name: Civilians
   m_TagString: Untagged
@@ -7507,6 +7508,22 @@ Transform:
   - {fileID: 1124050420}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &737363072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737363070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae233bc5aec6e5c5b97d4b6e5b79561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 3307763491876207924, guid: a6445eeae585e4d41a1434fde90e6d4d,
+    type: 3}
+  paths: []
+  CarBaseAmount: 5
 --- !u!64 &738163210
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15315,6 +15332,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 290295809}
+  anim: {fileID: 0}
+  bark: {fileID: 0}
+  bars: {fileID: 0}
+  gameFreeze: {fileID: 0}
 --- !u!1001 &1523421684
 PrefabInstance:
   m_ObjectHideFlags: 0
