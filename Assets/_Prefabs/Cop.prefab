@@ -296,7 +296,13 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 315a2b48d107f624d9547c4c1bd0fa71, type: 3}
   child: {fileID: 626679375848023432}
   childSource: {fileID: 7421374893449259595}
+  chaseSpeed: 80
+  interceptSpeed: 500
+  goal: {fileID: 0}
   destroyed: 0
+  alwaysChase: 0
+  currentState: 0
+  pigManager: {fileID: 0}
 --- !u!135 &6113078352550077763
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -13,7 +13,8 @@ public class PlayerCollisionScript : MonoBehaviour
     private void Start()
     {
         script = GetComponent<CartScript>();
-    }
+    } 
+
     private void Update()
     {
         prevVel = script.rb.linearVelocity;
@@ -32,8 +33,9 @@ public class PlayerCollisionScript : MonoBehaviour
 
         if (collision.collider.tag.Equals("civ") && !script.CDFour)
         {
-            hp--;
-            Debug.Log("hp: " + hp);
+            script.rb.linearVelocity = script.rb.linearVelocity * 0.01f;
+            collision.collider.gameObject.GetComponent<CivCarScript>().destroyThisCar();
+
         }
         else if (collision.collider.tag.Equals("civ") && script.CDFour)
         {

@@ -18,14 +18,23 @@ public class CopAI : MonoBehaviour
     AudioSource childSource;
 
     [SerializeField]
+    float chaseSpeed;
+    [SerializeField]
+    float interceptSpeed;
+
+    [SerializeField]
     Transform goal;
     public bool destroyed;
 
-    enum State {chasing, intercept, waiting};
+    public bool alwaysChase;
+
+    public enum State {chasing, intercept, waiting};
 
     private float waitTime;
     [SerializeField]
-    private State currentState;
+    public State currentState;
+
+    public CopAIManager pigManager;
 
     private void Awake()
     {
@@ -56,7 +65,10 @@ public class CopAI : MonoBehaviour
             return;
         }
 
-        setState();
+        if(!alwaysChase)
+        {
+            setState();
+        }
         stateLogic();
 
        /* float distance = Vector3.Distance(transform.position,playerTransform.position);
@@ -113,9 +125,10 @@ public class CopAI : MonoBehaviour
         {
             case State.chasing:
                 agent.SetDestination(playerTransform.position);
+                agent.speed = chaseSpeed;
                 break;
             case State.intercept:
-                
+                agent.speed = interceptSpeed;
                 break;
             case State.waiting:
                 waitTime -= Time.deltaTime;
