@@ -113,6 +113,7 @@ public class CartScript : MonoBehaviour
         {
             alignmentSpeed = 1;
         }
+        
     }
     // Update is called once per frame
     void Update()
