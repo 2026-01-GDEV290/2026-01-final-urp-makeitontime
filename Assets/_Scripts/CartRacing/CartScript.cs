@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -178,7 +178,9 @@ public class CartScript : MonoBehaviour
          {
              isGrounded = true;
          }
+        
          return isGrounded;
+         
     }
     void AlignToRamp()
     {

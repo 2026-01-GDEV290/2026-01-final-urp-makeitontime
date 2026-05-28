@@ -207811,6 +207811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1341815224}
   - component: {fileID: 1341815225}
+  - component: {fileID: 1341815226}
   m_Layer: 6
   m_Name: Roads
   m_TagString: Untagged
@@ -208202,6 +208203,18 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 3836d2c5c35bb4d44bd6482343f42fb5, type: 2}
   m_BuildHeightMesh: 0
+--- !u!114 &1341815226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341815223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808ff09e6f207002937c7e525c51f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1342052160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -276181,6 +276194,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5301197873316919793, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5538316419597457751, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
