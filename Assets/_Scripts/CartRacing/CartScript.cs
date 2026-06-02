@@ -175,10 +175,10 @@ public class CartScript : MonoBehaviour
         RaycastHit RB;
         RaycastHit LF;
         RaycastHit RF;
-        Physics.Raycast(backLeftCar.position + Vector3.up, Vector3.down, out LB);
-        Physics.Raycast(backRightCar.position + Vector3.up, Vector3.down, out RB);
-        Physics.Raycast(frontLeftCar.position + Vector3.up, Vector3.down, out LF);
-        Physics.Raycast(frontRightCar.position + Vector3.up, Vector3.down, out RF);
+        Physics.Raycast(backLeftCar.position + Vector3.up, Vector3.down, out LB, GroundLayers);
+        Physics.Raycast(backRightCar.position + Vector3.up, Vector3.down, out RB, GroundLayers);
+        Physics.Raycast(frontLeftCar.position + Vector3.up, Vector3.down, out LF, GroundLayers);
+        Physics.Raycast(frontRightCar.position + Vector3.up, Vector3.down, out RF, GroundLayers);
 
         //if the car is in the air set the car to be flat with the ground normally I'd set this to transform.up but since the car isn't supposed to really have a z axis
         //it makes more sense to set it's default state to flat. also makes the car transition to the floor nicely

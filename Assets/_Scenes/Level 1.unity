@@ -269377,6 +269377,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4827975730089109727, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5037559219217485826, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
       propertyPath: m_BackGroundColor.a
@@ -269397,10 +269402,20 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5267885883976090125, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5538316419597457751, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
       propertyPath: m_UiScaleMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5870359352879826143, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6536029405030517564, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
@@ -269421,6 +269436,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633938964613253707, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8855755341252917303, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
