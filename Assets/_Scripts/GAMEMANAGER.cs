@@ -10,6 +10,12 @@ public class GAMEMANAGER : MonoBehaviour
 
     bool usingCD = false;
 
+    public float levelBeatTime;
+    public float CopsCalled;
+    public float CarsHit;
+
+    public float levelPar;
+
     //Create Singleton
     private void Awake()
     {

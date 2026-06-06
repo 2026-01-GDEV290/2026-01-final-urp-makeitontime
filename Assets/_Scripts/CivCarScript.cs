@@ -8,10 +8,18 @@ public class CivCarScript : MonoBehaviour
     bool destroy;
     [SerializeField]
     AudioSource source;
+
+    [SerializeField]
+    GAMEMANAGER gameManager;
     private void Awake()
     {
         animator = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
+    }
+
+    private void Start()
+    {
+        gameManager = GAMEMANAGER.Instance;
     }
     public void destroyThisCar()
     {
@@ -19,10 +27,12 @@ public class CivCarScript : MonoBehaviour
         gameObject.GetComponent<Collider>().enabled = false;
     }
 
+
     private void Update()
     {
         if (destroy && !source.isPlaying)
         {
+            gameManager.CarsHit++;
             gameObject.SetActive(false);
         }
     }

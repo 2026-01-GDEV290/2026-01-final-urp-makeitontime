@@ -59,7 +59,8 @@ public class GoalScript : MonoBehaviour
     {
         gameWonBool = true;
         resultScreen.SetActive(true);
-        double minute = Mathf.FloorToInt(time / 60);
+
+        /*double minute = Mathf.FloorToInt(time / 60);
         double seconds = Math.Truncate((time - (60 * minute)));
         double miliseconds = ((Math.Truncate((time - (60 * minute)) * 100) / 100) % 1) * 100;
         if (time > 10)
@@ -70,6 +71,7 @@ public class GoalScript : MonoBehaviour
         {
             timerText.text = string.Format("0:{0:00}:{1:00}", seconds, miliseconds);
         }
+        */
 
         gameManager.Load_Game();
 
@@ -100,6 +102,8 @@ public class GoalScript : MonoBehaviour
                 break;
         }
         gameManager.Save_Game(data);
+
+        gameManager.levelBeatTime = time;
     }
 
     public void retryLevel()
