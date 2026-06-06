@@ -8,8 +8,11 @@ public class CivCarScript : MonoBehaviour
     bool destroy;
     [SerializeField]
     AudioSource source;
+    CopAIManager pigManager;
     private void Awake()
     {
+        pigManager = FindFirstObjectByType<CopAIManager>();
+    
         animator = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
     }
@@ -17,6 +20,7 @@ public class CivCarScript : MonoBehaviour
     {
         animator.SetBool("destroyed",true);
         gameObject.GetComponent<Collider>().enabled = false;
+        pigManager.addHeat();
     }
 
     private void Update()

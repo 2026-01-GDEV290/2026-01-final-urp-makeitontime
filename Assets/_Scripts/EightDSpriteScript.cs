@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EightDSpriteScript : MonoBehaviour
 {
+    [SerializeField]
+    bool rearView;
     private Transform player;
 
     private Vector3 targetPos;
@@ -22,7 +24,15 @@ public class EightDSpriteScript : MonoBehaviour
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponentInChildren<Animator>();
-        player = Camera.main.transform;
+
+        if(!rearView)
+        {
+            player = Camera.main.transform;
+        }
+        else
+        {
+            player = FindFirstObjectByType<MirrorCam>().transform;
+        }
     }
 
     // Update is called once per frame
