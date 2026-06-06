@@ -744,7 +744,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1023
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1236,6 +1236,7 @@ MonoBehaviour:
   gameMixer: {fileID: 24100000, guid: fa4cb957694859e42a108cdfc4e00724, type: 2}
   musicSlider: {fileID: 1790601921109538304}
   SFXSlider: {fileID: 8595217983626291816}
+  dialougeSlider: {fileID: 0}
   gameManager: {fileID: 0}
   data:
     Hi_Score_Level_One: 0
@@ -1255,6 +1256,7 @@ MonoBehaviour:
     Level_Five_B_Side_Locked: 0
     SFXVolume: 0.5
     MusicVolume: 0.5
+    DialougeVolume: 0.5
     valueThree: 
 --- !u!1 &1620805260948539215
 GameObject:
@@ -2438,7 +2440,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1535
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 2a8ce054ef1ea794f8ef00bf325e24a3, type: 2}
   m_TargetDisplay: 1
@@ -4854,6 +4856,7 @@ MonoBehaviour:
   gameMixer: {fileID: 24100000, guid: fa4cb957694859e42a108cdfc4e00724, type: 2}
   musicSlider: {fileID: 1790601921109538304}
   SFXSlider: {fileID: 8595217983626291816}
+  dialougeSlider: {fileID: 0}
   gameManager: {fileID: 0}
   data:
     Hi_Score_Level_One: 0
@@ -4873,6 +4876,7 @@ MonoBehaviour:
     Level_Five_B_Side_Locked: 0
     SFXVolume: 0.5
     MusicVolume: 0.5
+    DialougeVolume: 0.5
     valueThree: 
 --- !u!1 &7692589270551017061
 GameObject:
