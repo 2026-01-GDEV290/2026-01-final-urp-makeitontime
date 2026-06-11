@@ -8,31 +8,25 @@ public class CivCarScript : MonoBehaviour
     bool destroy;
     [SerializeField]
     AudioSource source;
-
-    [SerializeField]
-    GAMEMANAGER gameManager;
+    CopAIManager pigManager;
     private void Awake()
     {
+        pigManager = FindFirstObjectByType<CopAIManager>();
+    
         animator = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
-    }
-
-    private void Start()
-    {
-        gameManager = GAMEMANAGER.Instance;
     }
     public void destroyThisCar()
     {
         animator.SetBool("destroyed",true);
         gameObject.GetComponent<Collider>().enabled = false;
+        pigManager.addHeat();
     }
-
 
     private void Update()
     {
         if (destroy && !source.isPlaying)
         {
-            gameManager.CarsHit++;
             gameObject.SetActive(false);
         }
     }

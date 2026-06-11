@@ -59,6 +59,11 @@ public class DialougeManager : MonoBehaviour
             gameFreeze.dialougeScreen();
         }
     }
+    public void skipDialouge()
+    {
+        sNum = scene.screen.Length + 1;
+        updateDialouge();
+    }
     void updateDialouge()
     {
         sNum++;
@@ -68,6 +73,11 @@ public class DialougeManager : MonoBehaviour
             isInDialouge = false;
             gameFreeze.undialougeScreen();
             dialougeCanvas.SetActive(false);
+            CartScript cartScript = FindFirstObjectByType<CartScript>();
+            if (cartScript != null && !cartScript.enabled)
+            {
+                cartScript.enabled = true;
+            }
             return;
         }
 
