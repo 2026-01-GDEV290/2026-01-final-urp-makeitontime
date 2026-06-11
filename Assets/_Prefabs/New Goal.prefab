@@ -29830,7 +29830,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 0}
-  levelPars: []
+  levelPars:
+  - 85
+  - 85
+  - 85
+  - 85
+  - 85
   gameManager: {fileID: 0}
   gameFreeze: {fileID: 0}
 --- !u!1 &1694398787851314920

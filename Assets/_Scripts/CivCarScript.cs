@@ -19,15 +19,15 @@ public class CivCarScript : MonoBehaviour
     public void destroyThisCar()
     {
         animator.SetBool("destroyed",true);
-        gameObject.GetComponent<Collider>().enabled = false;
-        GAMEMANAGER.Instance.CarsHit++;
-        pigManager.addHeat();
+        gameObject.GetComponent<Collider>().enabled = false; 
     }
 
     private void Update()
     {
         if (destroy && !source.isPlaying)
         {
+            pigManager.addHeat();
+            GAMEMANAGER.Instance.CarsHit++;
             gameObject.SetActive(false);
         }
     }
