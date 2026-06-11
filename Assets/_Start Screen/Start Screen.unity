@@ -3760,6 +3760,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c5b25136ad5194783c2365bc52a6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelBeatTime: 0
+  CopsCalled: 0
+  CarsHit: 0
+  levelPar: 0
+  levelIndex: 0
 --- !u!4 &863407282
 Transform:
   m_ObjectHideFlags: 0
@@ -5533,8 +5538,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 626549493}
         m_TargetAssemblyTypeName: LoadingScreenScript, Assembly-CSharp
-        m_MethodName: LoadLevel
-        m_Mode: 3
+        m_MethodName: quitGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

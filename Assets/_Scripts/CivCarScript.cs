@@ -20,6 +20,7 @@ public class CivCarScript : MonoBehaviour
     {
         animator.SetBool("destroyed",true);
         gameObject.GetComponent<Collider>().enabled = false;
+        GAMEMANAGER.Instance.CarsHit++;
         pigManager.addHeat();
     }
 

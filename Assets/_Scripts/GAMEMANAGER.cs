@@ -16,6 +16,8 @@ public class GAMEMANAGER : MonoBehaviour
 
     public float levelPar;
 
+    public int levelIndex;
+
     //Create Singleton
     private void Awake()
     {

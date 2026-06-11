@@ -55,6 +55,11 @@ public class EightDSpriteScript : MonoBehaviour
         lastIndex = GetIndex(angle);
 
         animator.SetFloat("Angle", lastIndex);
+
+        Vector3 modTarget = player.position;
+        modTarget.y = transform.position.y;
+
+        transform.LookAt(modTarget);
     }
 
 

@@ -4193,6 +4193,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cop
       objectReference: {fileID: 0}
+    - target: {fileID: 5009929618900529706, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

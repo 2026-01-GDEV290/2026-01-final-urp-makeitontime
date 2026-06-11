@@ -8,14 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class GoalScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    [SerializeField]
-    GameObject resultScreen;
-    [SerializeField]
-    TMP_Text timerText;
     [SerializeField]
     LoadingScreenScript loadingScreen;
-
+    [SerializeField]
+    float[] levelPars;
     bool gameWonBool = false;
 
     [SerializeField]
@@ -27,7 +23,6 @@ public class GoalScript : MonoBehaviour
     private void Start()
     {
         time = 0;
-        resultScreen.SetActive(false);
         loadingScreen = FindFirstObjectByType<LoadingScreenScript>();
         gameManager = GAMEMANAGER.Instance;
         gameFreeze = FindFirstObjectByType<GameFreezeScript>();
@@ -58,7 +53,6 @@ public class GoalScript : MonoBehaviour
     private void gameWon()
     {
         gameWonBool = true;
-        resultScreen.SetActive(true);
 
         /*double minute = Mathf.FloorToInt(time / 60);
         double seconds = Math.Truncate((time - (60 * minute)));
@@ -83,27 +77,36 @@ public class GoalScript : MonoBehaviour
             case 2:
                 if(data.Hi_Score_Level_One > time || data.Hi_Score_Level_One == 0)
                     data.Hi_Score_Level_One = time;
+                    GAMEMANAGER.Instance.levelPar = levelPars[0];
                 break;
             case 3:
                 if (data.Hi_Score_Level_Two > time || data.Hi_Score_Level_Two == 0)
                     data.Hi_Score_Level_Two = time;
+                    GAMEMANAGER.Instance.levelPar = levelPars[1];
                 break;
             case 4:
                 if (data.Hi_Score_Level_Three > time || data.Hi_Score_Level_Three == 0)
                     data.Hi_Score_Level_Three = time;
+                    GAMEMANAGER.Instance.levelPar = levelPars[2];
                 break;
             case 5:
                 if (data.Hi_Score_Level_Four > time || data.Hi_Score_Level_Four == 0)
                     data.Hi_Score_Level_Four = time;
+                    GAMEMANAGER.Instance.levelPar = levelPars[3];
                 break;
             case 6:
                 if (data.Hi_Score_Level_Five > time || data.Hi_Score_Level_Five == 0)
                     data.Hi_Score_Level_Five = time;
+                    GAMEMANAGER.Instance.levelPar = levelPars[4];
                 break;
         }
         gameManager.Save_Game(data);
 
         gameManager.levelBeatTime = time;
+
+        gameManager.levelIndex = SceneManager.GetActiveScene().buildIndex;
+
+        loadingScreen.LoadLevel(5);
     }
 
     public void retryLevel()
