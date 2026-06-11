@@ -3195,6 +3195,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 1999608691165749187, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
+      propertyPath: carHeight
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6920892473445347596, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
       propertyPath: m_Material
@@ -3205,6 +3210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7045537381274719311, guid: f570413939e06f7499bc3bdaed193e41,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.76
       objectReference: {fileID: 0}
     - target: {fileID: 7045537381274719311, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}

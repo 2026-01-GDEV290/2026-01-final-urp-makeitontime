@@ -271932,6 +271932,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1744087829}
+  - component: {fileID: 1744087830}
   m_Layer: 0
   m_Name: Splines
   m_TagString: Untagged
@@ -271958,6 +271959,22 @@ Transform:
   - {fileID: 1405595724}
   m_Father: {fileID: 1954675312}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1744087830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744087828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae233bc5aec6e5c5b97d4b6e5b79561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 3307763491876207924, guid: a6445eeae585e4d41a1434fde90e6d4d,
+    type: 3}
+  paths: []
+  CarBaseAmount: 5
 --- !u!1 &1744091165
 GameObject:
   m_ObjectHideFlags: 0
