@@ -112,6 +112,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cop (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5507189167032912630, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: pigManager
+      value: 
+      objectReference: {fileID: 2487232363601570577}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201,6 +206,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5507189167032912630, guid: bacb4d8f7333b2e47872a02ac524848d,
+        type: 3}
+      propertyPath: pigManager
+      value: 
+      objectReference: {fileID: 2487232363601570577}
     - target: {fileID: 5507189167032912630, guid: bacb4d8f7333b2e47872a02ac524848d,
         type: 3}
       propertyPath: alwaysChase
