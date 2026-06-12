@@ -10,6 +10,7 @@ public class EightDSpriteScript : MonoBehaviour
 
     private Vector3 targetDir;
 
+    [SerializeField]
     private SpriteRenderer spriteRenderer;
 
     public Animator animator;
@@ -22,8 +23,8 @@ public class EightDSpriteScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        animator = GetComponentInChildren<Animator>();
+        //spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        //animator = GetComponentInChildren<Animator>();
 
         if(!rearView)
         {
@@ -92,7 +93,7 @@ public class EightDSpriteScript : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawRay(transform.position, transform.forward);
 
-        Gizmos.color = Color.blue;
+        Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, targetPos);
     }
 }

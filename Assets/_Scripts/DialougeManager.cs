@@ -74,6 +74,11 @@ public class DialougeManager : MonoBehaviour
             gameFreeze.undialougeScreen();
             dialougeCanvas.SetActive(false);
             CartScript cartScript = FindFirstObjectByType<CartScript>();
+            GameOverScript gameOverScript = FindFirstObjectByType<GameOverScript>();
+            if (gameOverScript != null && !gameOverScript.enabled)
+            {
+                gameOverScript.enabled = true;
+            }
             if (cartScript != null && !cartScript.enabled)
             {
                 cartScript.enabled = true;

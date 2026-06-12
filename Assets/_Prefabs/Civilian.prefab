@@ -339,6 +339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rearView: 0
+  spriteRenderer: {fileID: 6455173094564550008}
   animator: {fileID: 882711294525920034}
   angle: 0
   lastIndex: 0
@@ -378,6 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rearView: 1
+  spriteRenderer: {fileID: 1565562458016367239}
   animator: {fileID: 7412830350392364696}
   angle: 0
   lastIndex: 0

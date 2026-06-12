@@ -3198,7 +3198,7 @@ PrefabInstance:
     - target: {fileID: 1999608691165749187, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
       propertyPath: carHeight
-      value: 4.5
+      value: 9.5
       objectReference: {fileID: 0}
     - target: {fileID: 6920892473445347596, guid: f570413939e06f7499bc3bdaed193e41,
         type: 3}
