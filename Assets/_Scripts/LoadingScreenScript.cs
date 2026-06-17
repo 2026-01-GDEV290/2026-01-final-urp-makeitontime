@@ -7,17 +7,17 @@ public class LoadingScreenScript : MonoBehaviour
 {
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private TMP_Text loadingText;
-    [SerializeField] private Animator anim;
+    //[SerializeField] private Animator anim;
 
     private void Awake()
     {
-        anim = GetComponent<Animator>();
-        anim.SetTrigger("In");
+      /*  anim = GetComponent<Animator>();
+        anim.SetTrigger("In");*/
     }
     public void LoadLevel(int levelToLoad)
     {
         loadingScreen.SetActive(true);
-        anim.SetTrigger("Out");
+     //   anim.SetTrigger("Out");
         StartCoroutine(LoadLevelAsync(levelToLoad));
     }
     public void quitGame()

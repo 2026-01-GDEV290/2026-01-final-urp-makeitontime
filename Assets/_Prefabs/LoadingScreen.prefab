@@ -118,7 +118,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 8579572691459710233}
   loadingText: {fileID: 8554447431235000614}
-  anim: {fileID: 0}
 --- !u!95 &4408312529994990345
 Animator:
   serializedVersion: 7
@@ -127,7 +126,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4185186559301747094}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 75752fa87be3edcf48483c11476222d8, type: 2}
   m_CullingMode: 0
