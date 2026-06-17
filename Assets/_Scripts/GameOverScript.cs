@@ -19,7 +19,6 @@ public class GameOverScript : MonoBehaviour
     private void Awake()
     {
         gameOverUI.SetActive(false);
-        bars.Play();
         gameFreeze = FindFirstObjectByType<GameFreezeScript>();
         gameFreeze.ungameLoseEnded();
     }
@@ -29,6 +28,7 @@ public class GameOverScript : MonoBehaviour
         {
             gameFreeze.gameLoseEnded();
             gameOverUI.SetActive(true);
+            bars.Play();
             anim.Play("GameOver");
             StartCoroutine(PlayBark());
             gameOver = true;

@@ -60,7 +60,7 @@ public class EightDSpriteScript : MonoBehaviour
         Vector3 modTarget = player.position;
         modTarget.y = transform.position.y;
 
-        transform.LookAt(modTarget);
+        spriteRenderer.transform.LookAt(modTarget);
     }
 
 

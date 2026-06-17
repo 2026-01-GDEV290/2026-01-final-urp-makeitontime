@@ -24,7 +24,7 @@ public class CivCarScript : MonoBehaviour
 
     private void Update()
     {
-        if (destroy && !source.isPlaying)
+        if (destroy && !source.isPlaying && gameObject.activeInHierarchy == true)
         {
             pigManager.addHeat();
             GAMEMANAGER.Instance.CarsHit++;

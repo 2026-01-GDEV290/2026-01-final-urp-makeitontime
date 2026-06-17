@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 8055563714844619851}
   - component: {fileID: 4921696226902080041}
   - component: {fileID: 8170648449859118052}
-  - component: {fileID: 3773772893320566049}
   m_Layer: 9
   m_Name: CivSprite
   m_TagString: civ
@@ -273,23 +272,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 524af5b33af5b3f46ab3b16d17cf9d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 882711294525920034}
   destroy: 0
-  source: {fileID: 0}
---- !u!114 &3773772893320566049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038488795606792127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c660a040712aad8438d5919ea229749d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  canLookVertically: 0
+  source: {fileID: 4921696226902080041}
 --- !u!1 &3307763491876207924
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 524af5b33af5b3f46ab3b16d17cf9d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 7412830350392364696}
   destroy: 0
-  source: {fileID: 0}
+  source: {fileID: 8171682329584118361}
