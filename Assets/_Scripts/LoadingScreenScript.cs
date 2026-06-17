@@ -11,6 +11,7 @@ public class LoadingScreenScript : MonoBehaviour
 
     private void Awake()
     {
+        loadingScreen.SetActive(false);
       /*  anim = GetComponent<Animator>();
         anim.SetTrigger("In");*/
     }
