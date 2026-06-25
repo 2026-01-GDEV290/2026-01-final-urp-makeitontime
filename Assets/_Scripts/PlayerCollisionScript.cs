@@ -9,6 +9,8 @@ public class PlayerCollisionScript : MonoBehaviour
 
     [SerializeField]
     public Vector3 prevVel;
+    [SerializeField]
+    float crashPunishment;
 
     private void Start()
     {
@@ -33,7 +35,7 @@ public class PlayerCollisionScript : MonoBehaviour
 
         if (collision.collider.tag.Equals("civ") && !script.CDFour)
         {
-            script.rb.linearVelocity = script.rb.linearVelocity * 0.01f;
+            script.rb.linearVelocity = prevVel - (prevVel * crashPunishment);
             collision.collider.gameObject.GetComponent<CivCarScript>().destroyThisCar();
 
         }

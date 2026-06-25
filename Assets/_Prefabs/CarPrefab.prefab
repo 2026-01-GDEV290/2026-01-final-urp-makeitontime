@@ -147,6 +147,7 @@ MonoBehaviour:
   hp: 3
   script: {fileID: 0}
   prevVel: {x: 0, y: 0, z: 0}
+  crashPunishment: 0.5
 --- !u!1 &162029840219090709
 GameObject:
   m_ObjectHideFlags: 0
