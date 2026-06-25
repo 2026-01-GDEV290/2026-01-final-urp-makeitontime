@@ -1,7 +1,13 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class GameFreezeScript : MonoBehaviour
 {
+    [SerializeField]
+    private AudioMixer gameMixer;
+
+    float SFXVolume;
+
     bool gameOver = false;
     bool pause = false;
     bool gameWon = false;
@@ -10,6 +16,7 @@ public class GameFreezeScript : MonoBehaviour
     private void Awake()
     {
         checkIfShouldBePaused();
+        gameMixer.GetFloat("SFXVol", out SFXVolume);
     }
     public void pauseGame()
     {
@@ -57,10 +64,13 @@ public class GameFreezeScript : MonoBehaviour
     {
         if (dialouge || gameWon || gameOver || pause)
         {
+            gameMixer.GetFloat("SFXVol", out SFXVolume);
+            gameMixer.SetFloat("SFXVol", -80f);
             Time.timeScale = 0f;
         }
         else
         {
+            gameMixer.SetFloat("SFXVol", SFXVolume);
             Time.timeScale = 1;
         }
     }
