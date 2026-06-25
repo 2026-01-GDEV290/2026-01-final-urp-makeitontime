@@ -13,6 +13,11 @@ public class GameOverScript : MonoBehaviour
     AudioSource bars;
     [SerializeField]
     GameFreezeScript gameFreeze;
+    [SerializeField]
+    AudioClip gameOverMusic;
+
+    [SerializeField]
+    AudioSource audioSource;
 
     bool gameOver = false;
 
@@ -21,12 +26,18 @@ public class GameOverScript : MonoBehaviour
         gameOverUI.SetActive(false);
         gameFreeze = FindFirstObjectByType<GameFreezeScript>();
         gameFreeze.ungameLoseEnded();
+
+        audioSource = GameObject.FindGameObjectWithTag("mainMusic").GetComponent<AudioSource>();
     }
     public void GameOver()
     {
         if (gameOver == false)
         {
             gameFreeze.gameLoseEnded();
+
+            audioSource.clip = gameOverMusic;
+            audioSource.Play();
+
             gameOverUI.SetActive(true);
             bars.Play();
             anim.Play("GameOver");

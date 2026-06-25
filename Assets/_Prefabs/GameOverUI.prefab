@@ -633,6 +633,7 @@ MonoBehaviour:
   bark: {fileID: 2038958548699987451}
   bars: {fileID: 7674709448283973683}
   gameFreeze: {fileID: 0}
+  gameOverMusic: {fileID: 8300000, guid: 09f736b5329d8fdc5861978834b75af3, type: 3}
 --- !u!1 &4032764503893444878
 GameObject:
   m_ObjectHideFlags: 0
