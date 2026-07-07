@@ -1,0 +1,632 @@
+fileFormatVersion: 2
+guid: 1e6b9221e2b390542ab1b07acd1e22b0
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Small_Upper_Cutouts_Mat
+    second: {fileID: 2100000, guid: a5c7312a0af675d45966b541834ec9e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1
+    second: {fileID: 2100000, guid: 1361a1faee6ac2749a9857395b8808be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface10
+    second: {fileID: 2100000, guid: bd49de2cef6514d4bb4e250ca684d089, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface11
+    second: {fileID: 2100000, guid: abbc31cbe2053294ca5f1700ec4e60eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface12
+    second: {fileID: 2100000, guid: 1de2b547271f5fc4d844736c12276d27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface13
+    second: {fileID: 2100000, guid: 10d0ea76c1c4f8b4d9b7addaa7923a1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface14
+    second: {fileID: 2100000, guid: f218fcb038613014f9872e642b442916, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface15
+    second: {fileID: 2100000, guid: c272e3d16cbdb8c4db996dfe84006204, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface16
+    second: {fileID: 2100000, guid: 02f02b6ae56cfd749a907d54c15429ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface17
+    second: {fileID: 2100000, guid: 50a50aeacef02bb4dbb8c3a85cf069bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface18
+    second: {fileID: 2100000, guid: 46b440e7a08bf414796ff4c4b966bfdf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface19
+    second: {fileID: 2100000, guid: 3f898ea414f8c89429df7a0698cd0647, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface2
+    second: {fileID: 2100000, guid: 328ef7158dc50a84cb572595aa9edb89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface20
+    second: {fileID: 2100000, guid: 585eeae7a318bad4b9ac20db07b5c63c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface3
+    second: {fileID: 2100000, guid: e1bc9d9e7c7193248af259d8f19de17e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface4
+    second: {fileID: 2100000, guid: 5c5692ebf11fbd2448955557bdb5f59a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface5
+    second: {fileID: 2100000, guid: bfcef566e4fa9044eb3f913bdc6ee750, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface6
+    second: {fileID: 2100000, guid: 2265a76a268a975458dcf37c2a7d44b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface7
+    second: {fileID: 2100000, guid: 740da10589cd3ed48908d1b6c6a20eee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface8
+    second: {fileID: 2100000, guid: 452038808bddfb643920fb2760d1b49b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface9
+    second: {fileID: 2100000, guid: 2583650d89798d741bf980081fdc9285, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: openPBR_shader1
+    second: {fileID: 2100000, guid: 713dd4942859e2849bfabb774df5e1d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface2
+    second: {fileID: 2100000, guid: 3ab1890a2e97c7e49be431f0581dce27, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Big_WindowFrame_Mat_BaseColor
+    second: {fileID: 2800000, guid: bb068c0bef38e574ca9fdbcd7d1578e6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Big_WindowFrame_Mat_Metallic
+    second: {fileID: 2800000, guid: 8af0aa4659ecd994d86a0bda9e0d8397, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Big_WindowFrame_Mat_Normal
+    second: {fileID: 2800000, guid: c1d3921da1a476b4e95be87c82ebae97, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Big_WindowFrame_Mat_Roughness
+    second: {fileID: 2800000, guid: b81e58ff2a73e874583760adbd11ff6d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Big_Windows_Mat_BaseColor
+    second: {fileID: 2800000, guid: 19b837355147846429403600df3b30d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Big_Windows_Mat_Metallic
+    second: {fileID: 2800000, guid: 08b1172eed599e84b9481ac37ea2feb6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Big_Windows_Mat_Normal
+    second: {fileID: 2800000, guid: 10da9150e4cb97b4ba4a203388ef36d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Big_Windows_Mat_Roughness
+    second: {fileID: 2800000, guid: fce9d921ed2fcd649a9891a0bd6c4320, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Bottom_Floor_WindowFrames_Mat_BaseColor
+    second: {fileID: 2800000, guid: 8f1a1c920448fcc46838b5c9593ccb15, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Bottom_Floor_WindowFrames_Mat_Metallic
+    second: {fileID: 2800000, guid: 6e1d961a88fdb6d4eaa6d796e95275cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Bottom_Floor_WindowFrames_Mat_Normal
+    second: {fileID: 2800000, guid: 2da2204e95eb29a489c81c4675780f26, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Bottom_Floor_WindowFrames_Mat_Roughness
+    second: {fileID: 2800000, guid: a1851f40940d121479e4a98207f57db0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Building_Text_Mat_BaseColor
+    second: {fileID: 2800000, guid: 0cb0a254115afe04ba602153c6e21dd5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Building_Text_Mat_Metallic
+    second: {fileID: 2800000, guid: b875a4b009fce37498d4529d1a04e110, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Building_Text_Mat_Normal
+    second: {fileID: 2800000, guid: 00c3cdfadfd18714a8c0c5b1cb149291, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Building_Text_Mat_Roughness
+    second: {fileID: 2800000, guid: 5164e12eac4f63f4d9e8b0c58c3da0c3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Connecting_Hallway_Mat_BaseColor
+    second: {fileID: 2800000, guid: cec0aedbdaf33174a9080cc2bb73ba91, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Connecting_Hallway_Mat_Metallic
+    second: {fileID: 2800000, guid: 6c37bdaf3411096428b98b55cefcfff6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Connecting_Hallway_Mat_Normal
+    second: {fileID: 2800000, guid: aa344abebc461c44dafa63af41bd1ca6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Connecting_Hallway_Mat_Roughness
+    second: {fileID: 2800000, guid: 7a8cd3fb32dfe5a4faca9aaeebb1a246, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Main_Building_Mat_BaseColor
+    second: {fileID: 2800000, guid: 89c8d842125a7304b9a3ba2e833c1e19, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Main_Building_Mat_Metallic
+    second: {fileID: 2800000, guid: 9bd75ff53badace499e0fb415a250d69, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Main_Building_Mat_Normal
+    second: {fileID: 2800000, guid: 6c61b5e1da4543b40b305e89934478c7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Main_Building_Mat_Roughness
+    second: {fileID: 2800000, guid: 234437528bc997241a1a7d61f5a53c9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Pillar_Inner_Plane_Mat_BaseColor
+    second: {fileID: 2800000, guid: 5127a370621112b458292eaf33939259, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Pillar_Inner_Plane_Mat_Metallic
+    second: {fileID: 2800000, guid: 8e5cad6b2dd876d4eb1daca7895dde80, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Pillar_Inner_Plane_Mat_Normal
+    second: {fileID: 2800000, guid: 42c9bc2beb7774541bb256c91fa169da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Pillar_Inner_Plane_Mat_Roughness
+    second: {fileID: 2800000, guid: ef5249a63529c734b9636043e5a08968, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Roof_Lights_Mat_BaseColor
+    second: {fileID: 2800000, guid: 0fcc8101e0f99a248889b7fd06039fcf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Roof_Lights_Mat_Metallic
+    second: {fileID: 2800000, guid: f618f1971d1ec4d49a3cc73c16f2f98a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttke_Entrance_Frame_Mat_BaseColor
+    second: {fileID: 2800000, guid: c635e8bbdbb3f32428cd8ab669a1f114, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttke_Entrance_Frame_Mat_Metallic
+    second: {fileID: 2800000, guid: 83fb7e925cad9324499901788a5044d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttke_Entrance_Frame_Mat_Normal
+    second: {fileID: 2800000, guid: 5f93e61cc40d6a948b29bf6d7d66e78a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttke_Entrance_Frame_Mat_Roughness
+    second: {fileID: 2800000, guid: 19eb5b77b79f2f34680d2d7d194b1a44, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Buildjng_Mat_BaseColor
+    second: {fileID: 2800000, guid: e3ca2baf697d34241952f8fe9ae1850a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Buildjng_Mat_Metallic
+    second: {fileID: 2800000, guid: d74fa2c32b4fc2c45b643e1f27b0a21d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Buildjng_Mat_Normal
+    second: {fileID: 2800000, guid: ba44ed52228bf714e8690603d2ba0d9b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Buildjng_Mat_Roughness
+    second: {fileID: 2800000, guid: 8959240933d32a646b7660a7745e593d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Door_Frame_Mat_BaseColor
+    second: {fileID: 2800000, guid: d95074326ce9cb94a862b357f23f8918, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Door_Frame_Mat_Metallic
+    second: {fileID: 2800000, guid: 0183a5cf0ed85c2418e8a3fceebdde44, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Door_Frame_Mat_Normal
+    second: {fileID: 2800000, guid: a9eaf1c6d9793484fb1194c7bc62c4d9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Door_Frame_Mat_Roughness
+    second: {fileID: 2800000, guid: e9914c6adfaf5144cb641d3ea837f253, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Entrance_Windows_Mat_BaseColor
+    second: {fileID: 2800000, guid: 71c3b3c5b821fa04cab8d923f323da13, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Entrance_Windows_Mat_Metallic
+    second: {fileID: 2800000, guid: 7e38760afe7ed454ca6a5e0b63f94b14, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Entrance_Windows_Mat_Normal
+    second: {fileID: 2800000, guid: 9f56ea1e4f3f2d045bc76c14451969f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Shuttle_Entrance_Windows_Mat_Roughness
+    second: {fileID: 2800000, guid: 299b65c8f75f0f546a706901a5086bb5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Sign_Inner_Mat_BaseColor
+    second: {fileID: 2800000, guid: 9bf59cca8ea04a7468962cbe15dc5b93, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Sign_Inner_Mat_Metallic
+    second: {fileID: 2800000, guid: a824dfe3a77d9b74bbdf1f392aa4af96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Sign_Inner_Mat_Normal
+    second: {fileID: 2800000, guid: f0c75ab003984f94989d02d188c5ce98, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Sign_Inner_Mat_Roughness
+    second: {fileID: 2800000, guid: 1fed9b01e294497498deb6182d761226, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Sign_Outer_Mat_BaseColor
+    second: {fileID: 2800000, guid: 745f0f7283228f34c94333bfc76c6f64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Sign_Outer_Mat_Metallic
+    second: {fileID: 2800000, guid: dc0ffe551a284664e949258e0ffd656d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Sign_Outer_Mat_Normal
+    second: {fileID: 2800000, guid: a9e596330db0b8b4687684017862d82d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Sign_Outer_Mat_Roughness
+    second: {fileID: 2800000, guid: cb951eed226817140b3549f37eb43044, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Small_Winsows_Mat_BaseColor
+    second: {fileID: 2800000, guid: c8d6c42abaaffa041a6cddc7a0b64a7d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Small_Winsows_Mat_Metallic
+    second: {fileID: 2800000, guid: 88d637827d0b3d84cb94f4b104789c63, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Small_Winsows_Mat_Normal
+    second: {fileID: 2800000, guid: 49185862fbae1354fa9d6b3e14cb5cca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Small_Winsows_Mat_Roughness
+    second: {fileID: 2800000, guid: ed8d55391597aa448810edb33e6fc065, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Swivel_Door_Frame_Mat_BaseColor
+    second: {fileID: 2800000, guid: 89e7ce695f67b8346ab1ed301c885d0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Swivel_Door_Frame_Mat_Metallic
+    second: {fileID: 2800000, guid: ef7c5796f20b5d54cbe0fa6d5378c787, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Swivel_Door_Frame_Mat_Normal
+    second: {fileID: 2800000, guid: a75c676923eb3534c8810817908fe93b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Swivel_Door_Frame_Mat_Roughness
+    second: {fileID: 2800000, guid: 6016669f4c3b8644da59d2ad25376c08, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Swivel_Door_Window_Mat_BaseColor
+    second: {fileID: 2800000, guid: 1d8851ffeaeb87146bbb2d0e8a1d45a7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Swivel_Door_Window_Mat_Metallic
+    second: {fileID: 2800000, guid: 8e760f59a8f51014d9328c036570b574, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Swivel_Door_Window_Mat_Normal
+    second: {fileID: 2800000, guid: 930831605789d6644a723210d6b18a61, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Swivel_Door_Window_Mat_Roughness
+    second: {fileID: 2800000, guid: 291670af5c349a4459ea9f86e5a1d0eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Terminal_Entrance_Frames_Mat_BaseColor
+    second: {fileID: 2800000, guid: 4becc11e9456e1a4fa8b3fd2e0fb5a1e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Terminal_Entrance_Frames_Mat_Metallic
+    second: {fileID: 2800000, guid: 1226f304e2b280841a9b18bc9f764728, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Terminal_Entrance_Frames_Mat_Normal
+    second: {fileID: 2800000, guid: 99ab9ee157c694f47977dc3c02fe964c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Terminal_Entrance_Frames_Mat_Roughness
+    second: {fileID: 2800000, guid: 7d9805f8940b05647944813396655303, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Terminal_Entrance_Roofs_Mat_BaseColor
+    second: {fileID: 2800000, guid: c764bd38dab1d9e4980820d129560383, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Terminal_Entrance_Roofs_Mat_Metallic
+    second: {fileID: 2800000, guid: a524dfcb7113a644ba14049ab0dbc415, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Terminal_Entrance_Roofs_Mat_Normal
+    second: {fileID: 2800000, guid: 5cf36e16dcc615845a34cb7cfece5cad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Terminal_Entrance_Roofs_Mat_Roughness
+    second: {fileID: 2800000, guid: e4895cc1fb2d7f44faa57d4766f1cd50, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Top_Floor_WindowFrames_Mat_BaseColor
+    second: {fileID: 2800000, guid: 118e4c627898b024cb98063b35969261, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Top_Floor_WindowFrames_Mat_Metallic
+    second: {fileID: 2800000, guid: 355b469dec059134fa5a0290dee35d3a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Top_Floor_WindowFrames_Mat_Normal
+    second: {fileID: 2800000, guid: 6adb19f4353e8c740a6d33bf23c31523, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Top_Floor_WindowFrames_Mat_Roughness
+    second: {fileID: 2800000, guid: a736d6bc0c79fa24486e72d64551b99b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Top_Floor_Windows_Mat_BaseColor
+    second: {fileID: 2800000, guid: a0ad1441c0783ee419c8897a121437b5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Top_Floor_Windows_Mat_Metallic
+    second: {fileID: 2800000, guid: 3ef58be8ec81e384a8647f9232c262f0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Top_Floor_Windows_Mat_Normal
+    second: {fileID: 2800000, guid: 26b004dc66a92054ba83a83996cb3c43, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Airport_Texture_Prep_Model_Top_Floor_Windows_Mat_Roughness
+    second: {fileID: 2800000, guid: 3dca539b2d29185428e45de2df01130b, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
