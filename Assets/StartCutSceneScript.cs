@@ -3,18 +3,21 @@ using UnityEngine;
 public class StartCutSceneScript : MonoBehaviour
 {
     GameObject DialougeSystem;
+    [SerializeField]
     GameObject PauseMenu;
     [SerializeField]
     Animator animator; 
     GameObject UI;
     GameFreezeScript gameFreeze;
 
+    [SerializeField]
+    Vector3 startPos;
+
     bool CutsceneRan;
     
     void Start()
     {
         DialougeSystem = GameObject.Find("DialougeSystem");
-        PauseMenu = GameObject.Find("PauseMenu");
         gameFreeze = FindFirstObjectByType<GameFreezeScript>();
         DialougeSystem.SetActive(false);
         PauseMenu.SetActive(false);    
@@ -32,9 +35,14 @@ public class StartCutSceneScript : MonoBehaviour
             gameFreeze.uncutsceneScreen();
             DialougeSystem.SetActive(true);
             PauseMenu.SetActive(true);
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
             UI.SetActive(true);
             CutsceneRan = true;
+        }
+
+        if(CutsceneRan == true)
+        {
+            transform.localPosition = startPos;
         }
     }
 }
