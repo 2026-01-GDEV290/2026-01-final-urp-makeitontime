@@ -12,6 +12,7 @@ public class GameFreezeScript : MonoBehaviour
     bool pause = false;
     bool gameWon = false;
     bool dialouge = false;
+    bool cutscene = false;
 
     private void Awake()
     {
@@ -59,10 +60,20 @@ public class GameFreezeScript : MonoBehaviour
         dialouge = false;
         checkIfShouldBePaused();
     }
+    public void cutsceneScreen()
+    {
+        cutscene = true;
+        checkIfShouldBePaused();
+    }
+    public void uncutsceneScreen()
+    {
+        cutscene = false;
+        checkIfShouldBePaused();
+    }
 
     private void checkIfShouldBePaused()
     {
-        if (dialouge || gameWon || gameOver || pause)
+        if (dialouge || gameWon || gameOver || pause || cutscene)
         {
             gameMixer.GetFloat("SFXVol", out SFXVolume);
             gameMixer.SetFloat("SFXVol", -80f);
