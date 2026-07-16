@@ -634,6 +634,7 @@ MonoBehaviour:
   bars: {fileID: 7674709448283973683}
   gameFreeze: {fileID: 0}
   gameOverMusic: {fileID: 8300000, guid: 09f736b5329d8fdc5861978834b75af3, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &4032764503893444878
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +680,8 @@ AudioSource:
   m_GameObject: {fileID: 4032764503893444878}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7493774558337524792, guid: fa4cb957694859e42a108cdfc4e00724,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: edbf4f1a67be59d4c833f431fc2e6ba4, type: 3}
   m_PlayOnAwake: 1
@@ -1410,7 +1412,8 @@ AudioSource:
   m_GameObject: {fileID: 7767682972536097252}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7493774558337524792, guid: fa4cb957694859e42a108cdfc4e00724,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 6f4bf2e2d0c47104486f83a8891cf9c3, type: 3}
   m_PlayOnAwake: 0
