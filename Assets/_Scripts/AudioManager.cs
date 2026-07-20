@@ -12,19 +12,16 @@ public class AudioManager : MonoBehaviour
     Slider SFXSlider;
     [SerializeField]
     Slider dialougeSlider;
-
-    public GAMEMANAGER gameManager = null;
     public SaveData data;
 
     private void Start()
     {
-        gameManager = GAMEMANAGER.Instance;
 
-        if (gameManager.getSaveData() != null)
+        if (GAMEMANAGER.Instance.getSaveData() != null)
         {
-            gameManager.Load_Game();
+            GAMEMANAGER.Instance.Load_Game();
 
-            data = gameManager.getSaveData();
+            data = GAMEMANAGER.Instance.getSaveData();
 
             LoadMusicVolume();
 
@@ -35,6 +32,8 @@ public class AudioManager : MonoBehaviour
         else
         {
             Debug.Log("Game Manager data == null");
+
+            data = new SaveData();
 
             SetMusicVol();
             SetSFXVol();
@@ -47,12 +46,14 @@ public class AudioManager : MonoBehaviour
     {
         float volume = data.DialougeVolume;
 
+        data.DialougeVolume = volume;
+
         float percent = volume / 1;
         volume = Mathf.Clamp((percent * 100) - 80, -80, 10);
 
         gameMixer.SetFloat("DialougeVol", volume);
 
-        gameManager.Save_Game(data);
+        GAMEMANAGER.Instance.Save_Game(data);
     }
 
     public void SetMusicVol()
@@ -66,7 +67,7 @@ public class AudioManager : MonoBehaviour
 
         gameMixer.SetFloat("MusicVol", volume);
 
-        gameManager.Save_Game(data);
+        GAMEMANAGER.Instance.Save_Game(data);
     }
     
     public void SetSFXVol()
@@ -80,7 +81,7 @@ public class AudioManager : MonoBehaviour
 
         gameMixer.SetFloat("SFXVol", volume);
 
-        gameManager.Save_Game(data);
+        GAMEMANAGER.Instance.Save_Game(data);
     }
     public void LoadDialougeVolume()
     {
