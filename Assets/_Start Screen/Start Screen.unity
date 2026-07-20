@@ -7795,7 +7795,8 @@ MonoBehaviour:
   musicSlider: {fileID: 22603547}
   SFXSlider: {fileID: 125588945}
   dialougeSlider: {fileID: 1009923423}
-  gameManager: {fileID: 0}
+  DialougeSource: {fileID: 0}
+  SFXSource: {fileID: 0}
   data:
     Hi_Score_Level_One: 0
     Hi_Score_Level_Two: 0
