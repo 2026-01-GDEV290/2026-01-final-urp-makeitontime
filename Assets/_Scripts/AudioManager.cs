@@ -44,7 +44,7 @@ public class AudioManager : MonoBehaviour
 
     public void SetDialougeVol()
     {
-        float volume = data.DialougeVolume;
+        float volume = dialougeSlider.value;
 
         data.DialougeVolume = volume;
 

@@ -81,7 +81,7 @@ public class GameFreezeScript : MonoBehaviour
         }
         else
         {
-            gameMixer.SetFloat("SFXVol", SFXVolume);
+            gameMixer.SetFloat("SFXVol", GAMEMANAGER.Instance.getSaveData().SFXVolume * 100 - 80);
             Time.timeScale = 1;
         }
     }
